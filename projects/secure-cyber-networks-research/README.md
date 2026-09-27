@@ -42,4 +42,4 @@ The paper discusses:
 - Manual review of AI-generated code
 
 ## Full Research Paper
-[View the full paper](./CISC3600-Final-Project.pdf)
+[View the full paper](<./CISC3600 Final Project - Jayden Nguyen.pdf>)
