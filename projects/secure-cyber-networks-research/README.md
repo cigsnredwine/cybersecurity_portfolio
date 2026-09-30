@@ -1,45 +1,16 @@
 # Security Risks of Third-Party APIs & Developer Behavior
 
 ## Overview
-This research project examines cybersecurity risks introduced by third-party APIs, software supply chains, credential leakage, and AI-assisted development.
 
-The paper analyzes the 2026 Vercel security breach as a case study of a third-party OAuth compromise, as well as the Axios npm supply chain compromise. It also explores exposed secrets in GitHub repositories, risks in AI-generated code, and mitigation strategies such as least privilege, zero trust architecture, dependency auditing, and credential scanning.
+For a Secure Cyber Networks course, I wrote a research paper examining risks from third-party APIs, software supply chains, exposed credentials, and AI-assisted development. Using Vercel OAuth and Axios npm case studies, I connected these risks to mitigation approaches including least privilege, dependency auditing, credential scanning, and secure code review.
 
-## Topics Covered
-- Third-party API security
-- OAuth and identity compromise
-- Software supply chain security
-- npm dependency risks
-- Secret and credential leakage
-- AI-assisted development risks
-- Principle of least privilege
-- Zero trust architecture
+## Tools and Topics
 
-## Case Studies
+- **API and OAuth security:** Third-party access and delegated credentials.
+- **Software supply chains:** npm dependencies and package compromise.
+- **Secret management:** Exposed credentials and credential scanning.
+- **Secure development:** AI-generated code review, least privilege, and zero trust.
 
-### Vercel OAuth Breach
-Analyzed how a compromised third-party OAuth application created an attack path into Vercel's environment through stolen OAuth tokens and trusted identity relationships.
+## Materials
 
-### Axios npm Supply Chain Compromise
-Examined how malicious package versions and dependency installation behavior can introduce security risks into software projects.
-
-## Key Findings
-- Third-party integrations can create indirect attack paths into trusted systems.
-- OAuth tokens can act as delegated credentials and bypass password-based authentication.
-- Software dependency ecosystems can spread vulnerabilities across many applications.
-- Exposed secrets may remain active long after they are published.
-- AI-generated code should be reviewed using the same security standards as externally sourced code.
-
-## Mitigation Strategies
-The paper discusses:
-- Principle of least privilege
-- Limiting OAuth scopes
-- Regular access audits
-- Zero trust architecture
-- Static analysis
-- Dependency auditing
-- Credential scanning
-- Manual review of AI-generated code
-
-## Full Research Paper
-[View the full paper](<./CISC3600 Final Project - Jayden Nguyen.pdf>)
+- [My research paper](./CISC3600%20Final%20Project%20-%20Jayden%20Nguyen.pdf)
