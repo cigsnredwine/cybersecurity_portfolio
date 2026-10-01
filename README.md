@@ -10,11 +10,11 @@ I am Jayden, a computer science student developing practical cybersecurity skill
 
 ## Projects
 
-- **[Botium Toys — Internal Security Audit](./botium-toys-security-audit/):** Assessed 14 security controls for a fictional retailer; identified 9 absent or inadequate controls and documented recommendations.
+- **[Botium Toys — Internal Security Audit](./projects/botium-toys-security-audit/):** Assessed 14 security controls for a fictional retailer; identified 9 absent or inadequate controls and documented recommendations.
 - **[Security Risks of Third-Party APIs & Developer Behavior](./projects/secure-cyber-networks-research/):** Researched API security, software supply chains, exposed credentials, and AI-assisted development.
-- **[Password Cracking with John the Ripper](./john-the-ripper-password-cracking/):** Recovered passwords from instructor-provided DES and MD5 hashes using dictionary, rule-based, and incremental attacks.
-- **[Digital Forensics Investigation](./Data%20Acquisition%20%26%20Extraction%20Lab/):** Analyzed a supplied disk image with FTK Imager and Autopsy; documented acquisition and reporting with screenshots.
-- **[Vulnerability Scanning Tools — TryHackMe Lab](./Vulnerability%20Scanning%20Tools%20Lab/):** Explored network and web vulnerability scanning with Nmap, Nikto, and OpenVAS.
+- **[Password Cracking with John the Ripper](./projects/john-the-ripper-password-cracking/):** Recovered passwords from instructor-provided DES and MD5 hashes using dictionary, rule-based, and incremental attacks.
+- **[Digital Forensics Investigation](./projects/Data%20Acquisition%20%26%20Extraction%20Lab/):** Analyzed a supplied disk image with FTK Imager and Autopsy; documented acquisition and reporting with screenshots.
+- **[Vulnerability Scanning Tools — TryHackMe Lab](./projects/Vulnerability%20Scanning%20Tools%20Lab/):** Completed the TryHackMe room using Nmap, Nikto, and OpenVAS; included scan screenshots and completion evidence.
 
 ## Certifications in Progress
 
