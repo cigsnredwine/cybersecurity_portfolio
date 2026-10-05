@@ -1,0 +1,1158 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Security+ SY0-801 Study Guide</title><style>html{scroll-behavior:smooth;scroll-padding-top:2rem}body{font:17px/1.6 system-ui,sans-serif;color:#1f2937;background:#f8fafc;margin:0}main{max-width:1100px;margin:auto;padding:40px 30px;background:white}a{color:#075fc5;text-decoration:underline}a:hover{color:#003678}h1,h2,h3{line-height:1.25}h2{border-top:1px solid #cbd5e1;padding-top:28px;margin-top:44px}h3{margin-top:32px}h4{margin-top:24px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:15px;margin:16px 0}th,td{border:1px solid #cbd5e1;padding:10px;text-align:left;vertical-align:top}th{background:#eef4fb}tr:nth-child(even){background:#f8fafc}code{background:#edf2f7;padding:2px 4px}li{margin:5px 0}.top{position:fixed;bottom:18px;right:18px;background:#075fc5;color:white;padding:9px 14px;border-radius:6px;text-decoration:none}@media print{.top{display:none}main{padding:0}body{background:white}}</style></head><body><main><aside aria-label="Resource context" style="padding:18px;border:1px solid #cbd5e1;background:#f1f5f9;border-radius:8px"><strong>Portfolio study resource · AI-assisted with Codex</strong><p>Created for Security+ preparation from a supplied objectives document. Automated checks covered structure and navigation; exhaustive subject-matter review remains ongoing. This is an independent learning resource.</p><p><a href="https://github.com/cigsnredwine/cybersecurity_portfolio">Cybersecurity portfolio</a> · <a href="https://github.com/cigsnredwine/cybersecurity_portfolio/tree/main/study-resources/security-plus">Process and attribution</a> · <a href="study-guide.md" download>Download Markdown</a></p></aside><h1 id="comptia-security-sy0-801-v8-study-guide">CompTIA Security+ SY0-801 V8 Study Guide</h1>
+<p>Based on the uploaded <strong>CompTIA Security+ SY0-801 Exam Objectives, Version 2.0</strong>. This guide preserves objectives 1.1–5.6 and explains each listed concept in original study notes. Examples are illustrative, not exam questions. The objectives say their examples are not exhaustive; learn how to apply the concepts as well as recognize the vocabulary.</p>
+<h2 id="clickable-index">Clickable index</h2>
+<ul>
+<li style="margin-left:0.0em"><a href="#how-to-use-this-guide">How to use this guide</a></li>
+<li style="margin-left:0.0em"><a href="#10-general-security-concepts--16">1.0 General Security Concepts — 16%</a></li>
+<li style="margin-left:1.2em"><a href="#11-explain-security-concepts-and-controls">1.1 Security concepts and controls</a></li>
+<li style="margin-left:1.2em"><a href="#12-given-a-scenario-demonstrate-the-impact-of-change-management-processes-on-security">1.2 Change management</a></li>
+<li style="margin-left:1.2em"><a href="#13-explain-the-importance-of-using-appropriate-cryptographic-solutions">1.3 Cryptographic solutions</a></li>
+<li style="margin-left:0.0em"><a href="#20-threats-vulnerabilities-and-attacks--24">2.0 Threats, Vulnerabilities, and Attacks — 24%</a></li>
+<li style="margin-left:1.2em"><a href="#21-explain-characteristics-of-threats-and-vulnerabilities">2.1 Threat and vulnerability characteristics</a></li>
+<li style="margin-left:1.2em"><a href="#22-describe-common-threat-actors-and-motivations">2.2 Threat actors and motivations</a></li>
+<li style="margin-left:1.2em"><a href="#23-describe-threat-vectors-and-sources">2.3 Threat vectors and sources</a></li>
+<li style="margin-left:1.2em"><a href="#24-explain-types-of-vulnerabilities-and-attack-surfaces">2.4 Vulnerabilities and attack surfaces</a></li>
+<li style="margin-left:1.2em"><a href="#25-given-a-scenario-analyze-indicators-of-malicious-activity">2.5 Indicators of malicious activity</a></li>
+<li style="margin-left:1.2em"><a href="#26-summarize-threats-and-vulnerabilities-associated-with-artificial-intelligence-usage">2.6 Artificial intelligence risks</a></li>
+<li style="margin-left:0.0em"><a href="#30-security-architecture--19">3.0 Security Architecture — 19%</a></li>
+<li style="margin-left:1.2em"><a href="#31-compare-and-contrast-security-implications-of-different-architecture-models">3.1 Architecture models</a></li>
+<li style="margin-left:1.2em"><a href="#32-given-a-scenario-manage-the-security-architecture-to-best-protect-the-infrastructure">3.2 Protecting infrastructure</a></li>
+<li style="margin-left:1.2em"><a href="#33-summarize-concepts-and-strategies-used-to-protect-data">3.3 Protecting data</a></li>
+<li style="margin-left:1.2em"><a href="#34-explain-the-importance-of-resilience-and-recovery-in-security-architecture">3.4 Resilience and recovery</a></li>
+<li style="margin-left:0.0em"><a href="#40-security-operations--27">4.0 Security Operations — 27%</a></li>
+<li style="margin-left:1.2em"><a href="#41-given-a-scenario-apply-mitigating-controls-techniques-and-solutions-to-secure-the-environment">4.1 Mitigating controls</a></li>
+<li style="margin-left:1.2em"><a href="#42-explain-the-security-implications-of-proper-hardware-software-and-data-asset-management">4.2 Asset management</a></li>
+<li style="margin-left:1.2em"><a href="#43-given-a-scenario-perform-tasks-associated-with-vulnerability-management">4.3 Vulnerability management</a></li>
+<li style="margin-left:1.2em"><a href="#44-explain-security-alerting-and-monitoring-concepts-and-tools">4.4 Alerting and monitoring</a></li>
+<li style="margin-left:1.2em"><a href="#45-given-a-scenario-apply-concepts-related-to-identity-and-access-management">4.5 Identity and access management</a></li>
+<li style="margin-left:1.2em"><a href="#46-given-a-scenario-apply-automation-and-orchestration-solutions-to-secure-operations">4.6 Automation and orchestration</a></li>
+<li style="margin-left:1.2em"><a href="#47-summarize-concepts-associated-with-incident-response-activities">4.7 Incident response</a></li>
+<li style="margin-left:1.2em"><a href="#48-given-a-scenario-use-data-artifacts-and-sources-to-support-a-security-investigation">4.8 Investigation data and artifacts</a></li>
+<li style="margin-left:0.0em"><a href="#50-security-program-management-and-oversight--14">5.0 Security Program Management and Oversight — 14%</a></li>
+<li style="margin-left:1.2em"><a href="#51-explain-the-importance-of-governance-risk-and-compliance-artifacts">5.1 Governance, risk, and compliance artifacts</a></li>
+<li style="margin-left:1.2em"><a href="#52-explain-the-impact-of-risk-management-processes-on-the-security-of-the-organization">5.2 Risk management</a></li>
+<li style="margin-left:1.2em"><a href="#53-explain-the-assessment-and-management-processes-associated-with-third-party-risk">5.3 Third-party risk</a></li>
+<li style="margin-left:1.2em"><a href="#54-summarize-elements-of-effective-security-compliance">5.4 Compliance</a></li>
+<li style="margin-left:1.2em"><a href="#55-explain-concepts-associated-with-audit-and-assessment-activities">5.5 Audits and assessments</a></li>
+<li style="margin-left:1.2em"><a href="#56-given-a-scenario-apply-security-awareness-concepts-to-improve-organizational-security">5.6 Security awareness</a></li>
+<li style="margin-left:0.0em"><a href="#glossary-of-important-distinctions">Glossary of important distinctions</a></li>
+<li style="margin-left:1.2em"><a href="#foundations-and-cryptography">Foundations and cryptography</a></li>
+<li style="margin-left:1.2em"><a href="#threats-and-vulnerabilities">Threats and vulnerabilities</a></li>
+<li style="margin-left:1.2em"><a href="#architecture-and-data">Architecture and data</a></li>
+<li style="margin-left:1.2em"><a href="#operations-and-identity">Operations and identity</a></li>
+<li style="margin-left:1.2em"><a href="#governance-and-risk">Governance and risk</a></li>
+<li style="margin-left:0.0em"><a href="#complete-acronym-glossary">Complete acronym glossary</a></li>
+<li style="margin-left:1.2em"><a href="#ac">A–C</a></li>
+<li style="margin-left:1.2em"><a href="#dh">D–H</a></li>
+<li style="margin-left:1.2em"><a href="#in">I–N</a></li>
+<li style="margin-left:1.2em"><a href="#or">O–R</a></li>
+<li style="margin-left:1.2em"><a href="#sx">S–X</a></li>
+<li style="margin-left:1.2em"><a href="#additional-acronyms-used-in-this-guide-or-objectives">Additional acronyms used in this guide or objectives</a></li>
+<li style="margin-left:0.0em"><a href="#scenario-practice-and-self-checks">Scenario practice and self-checks</a></li>
+<li style="margin-left:0.0em"><a href="#sources-and-terminology-notes">Sources and terminology notes</a></li>
+</ul>
+<h2 id="how-to-use-this-guide">How to use this guide</h2>
+<p>For each concept, be able to define it, identify evidence of it, choose an appropriate control, and explain a tradeoff. For scenario objectives, ask: <strong>What asset is at risk? What is the immediate goal? What evidence supports the decision? What must be preserved?</strong> Cover every domain; weights indicate emphasis, not permission to skip sections.</p>
+<p>Tables group closely related concepts while keeping the Portable Document Format (PDF) source&#x27;s order. Acronyms are expanded when first introduced in the instructional text and again in the acronym glossary. Classification names and organizational processes vary; use the scenario&#x27;s stated policy. Technical examples are study illustrations, not universal configuration prescriptions.</p>
+<h2 id="10-general-security-concepts--16">1.0 General Security Concepts — 16%</h2>
+<h3 id="11-explain-security-concepts-and-controls">1.1 Explain security concepts and controls</h3>
+<h4 id="defense-in-depth">Defense in depth</h4>
+<p><strong>Defense in depth</strong> uses multiple complementary safeguards so one failure does not expose everything. Example: an email filter, staff training, limited account permissions, endpoint monitoring, and tested backups each address a different part of a ransomware incident.</p>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and practical example</th></tr></thead><tbody>
+<tr><td>Confidentiality, integrity, and availability (CIA)</td><td>Confidentiality prevents unauthorized disclosure; integrity prevents or detects unauthorized alteration; availability keeps services usable when needed. Encryption protects payroll secrecy, signatures help detect tampering, and redundant servers support access.</td></tr>
+<tr><td>Authentication, authorization, and accounting (AAA)</td><td>Authentication establishes who or what is requesting access; authorization determines allowed actions; accounting records activity. A user signs in, can read only their department&#x27;s files, and their downloads are logged.</td></tr>
+<tr><td>Non-repudiation</td><td>Evidence that makes falsely denying an action difficult. A properly implemented digital signature links a signed transaction to a protected signing key. Shared accounts weaken attribution.</td></tr>
+<tr><td>Zero Trust principles</td><td>Do not grant implicit trust merely because a device is on an internal network. Explicitly verify identity and device context, minimize permissions, and assume breaches are possible. Reassess access as conditions change.</td></tr>
+<tr><td>Least privilege</td><td>Grant only the permissions necessary, for the needed duration. A backup service can read protected files without having unrestricted administrator access.</td></tr>
+</tbody></table></div>
+<h4 id="control-categories">Control categories</h4>
+<div class="table-wrap"><table><thead><tr><th>Category</th><th>Meaning and example</th></tr></thead><tbody>
+<tr><td>Technical/logical</td><td>Technology-enforced safeguards: encryption, access rules, authentication.</td></tr>
+<tr><td>Managerial/administrative</td><td>Governance and management decisions: risk assessments, policies, security planning.</td></tr>
+<tr><td>Physical/environmental</td><td>Protection of facilities and operating conditions: locks, cooling, smoke detection.</td></tr>
+<tr><td>Operational</td><td>Safeguards implemented through daily people/process activities: badge checks, backup procedures, incident handling.</td></tr>
+</tbody></table></div>
+<h4 id="control-types">Control types</h4>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Purpose and example</th></tr></thead><tbody>
+<tr><td>Preventive</td><td>Stops an event: deny unauthorized connections with a firewall.</td></tr>
+<tr><td>Deterring</td><td>Discourages an attempt: visible cameras or warning signs. The PDF says “deterring”; “deterrent” is common terminology.</td></tr>
+<tr><td>Corrective</td><td>Repairs damage or restores a safe state: remove malware and restore files.</td></tr>
+<tr><td>Detective</td><td>Reveals an event: an alert for an unexpected privileged login.</td></tr>
+<tr><td>Compensating</td><td>Provides an alternative safeguard when the preferred control is impractical: isolate a legacy system that cannot be patched. It must address the relevant risk.</td></tr>
+<tr><td>Directive</td><td>Tells people what to do: a policy requiring visitors to be escorted.</td></tr>
+</tbody></table></div>
+<p><strong>Exam distinction:</strong> Category describes how a control is implemented; type describes its purpose. A camera is physical and usually detective, and its visibility can also deter.</p>
+<h3 id="12-given-a-scenario-demonstrate-the-impact-of-change-management-processes-on-security">1.2 Given a scenario, demonstrate the impact of change management processes on security</h3>
+<h4 id="business-processes-impacting-security-operations">Business processes impacting security operations</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and practical example</th></tr></thead><tbody>
+<tr><td>Change advisory board (CAB); approval process</td><td>A review body assesses proposed changes and approvals according to policy. A firewall change is reviewed for exposure, business impact, testing, and recovery steps before implementation.</td></tr>
+<tr><td>Ownership</td><td>A named person is accountable for the change and its results. A service owner approves business downtime; an implementer executes the work.</td></tr>
+<tr><td>Stakeholders</td><td>People affected or needed for success: users, operations, security, vendors, and business owners. Notify teams that depend on the altered service.</td></tr>
+<tr><td>Impact analysis</td><td>Predict effects on security, availability, dependencies, users, and compliance. Closing a port may stop an attack path but also break a payment integration.</td></tr>
+<tr><td>Test results</td><td>Evidence that the change works and avoids unacceptable side effects. Test expected traffic and blocked traffic, not just whether a service starts.</td></tr>
+<tr><td>Backout planning</td><td>Document how to return to the previous safe state, including triggers and deadlines. Save the old configuration and verify that rollback remains feasible.</td></tr>
+<tr><td>Fail forward</td><td>Recover by completing or correcting the new state rather than reverting. A database migration may require a follow-up fix because rollback would lose new transactions.</td></tr>
+<tr><td>Maintenance window</td><td>A scheduled period for changes with approved disruption. Confirm staffing and dependency availability during the window.</td></tr>
+<tr><td>Standard operating procedures (SOPs)</td><td>Repeatable, approved instructions for routine work. A certificate renewal procedure includes testing, deployment, and monitoring.</td></tr>
+</tbody></table></div>
+<h4 id="technical-implications">Technical implications</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and practical example</th></tr></thead><tbody>
+<tr><td>Allow lists/deny lists</td><td>Permit explicitly approved items or reject explicitly prohibited ones. Updating an allow list may be necessary when a legitimate application&#x27;s signing certificate changes.</td></tr>
+<tr><td>Restricted activities</td><td>Actions limited during a change, such as a deployment freeze or prohibiting simultaneous database edits.</td></tr>
+<tr><td>Downtime</td><td>Period when a service is unavailable. Include expected downtime and an overrun decision point in the plan.</td></tr>
+<tr><td>Service restart</td><td>Restart a background component to load configuration; dependent services may briefly lose connectivity.</td></tr>
+<tr><td>Application restart</td><td>Restart an application to activate an update; users may lose sessions or unsaved work.</td></tr>
+<tr><td>Legacy applications</td><td>Older applications may rely on outdated protocols, libraries, or unsupported platforms. Test compatibility before enforcing new controls.</td></tr>
+<tr><td>Dependencies</td><td>Components that must operate together. A login service may depend on a directory, name resolution, certificates, and accurate clocks.</td></tr>
+</tbody></table></div>
+<h4 id="documentation-and-version-control">Documentation and version control</h4>
+<ul>
+<li style="margin-left:0.0em"><strong>Updating diagrams:</strong> Reflect new network paths, security zones, devices, and trust boundaries. An obsolete diagram can cause an incident responder to isolate the wrong system.</li>
+<li style="margin-left:0.0em"><strong>Updating policies/procedures:</strong> Record changed responsibilities, requirements, and operating steps. Documentation must match the implemented configuration.</li>
+<li style="margin-left:0.0em"><strong>Version control:</strong> Retain change history, approved revisions, and identifiable versions. It enables comparison, accountability, and restoration; protect the repository and keep secrets out of it.</li>
+</ul>
+<p><strong>Scenario:</strong> Before disabling an obsolete encryption protocol, identify clients that use it, test replacements, obtain approval, schedule the change, define rollback or fail-forward criteria, update documentation, and monitor results.</p>
+<h3 id="13-explain-the-importance-of-using-appropriate-cryptographic-solutions">1.3 Explain the importance of using appropriate cryptographic solutions</h3>
+<h4 id="public-key-infrastructure">Public key infrastructure</h4>
+<p><strong>Public key infrastructure (PKI)</strong> combines certificates, authorities, keys, policies, and processes to establish trust in public keys.</p>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Public key</td><td>A shareable key used to verify signatures or, in suitable schemes, encrypt data to its owner. Sharing it does not expose the paired private key.</td></tr>
+<tr><td>Private key</td><td>A secret key used to sign or decrypt, depending on the scheme. Theft can permit impersonation; storage and access protection are essential.</td></tr>
+<tr><td>Key escrow</td><td>An authorized recovery arrangement that holds keys or recovery material with a trusted party. It supports recovery but creates a sensitive target and requires controlled access.</td></tr>
+</tbody></table></div>
+<h4 id="certificates">Certificates</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Certificate authorities</td><td>Trusted entities that bind identities to public keys through signed certificates. Validate the chain and intended usage, not merely the presence of a certificate.</td></tr>
+<tr><td>Certificate revocation lists (CRLs)</td><td>Published lists of certificates revoked before expiration. A cached list can be stale.</td></tr>
+<tr><td>Online Certificate Status Protocol (OCSP)</td><td>A protocol for obtaining a certificate&#x27;s revocation status. Availability, freshness, and client handling affect protection.</td></tr>
+<tr><td>Self-signed</td><td>Signed by its own private key. Useful in controlled environments when trust is explicitly provisioned; not automatically trusted by external clients.</td></tr>
+<tr><td>Third-party</td><td>Issued by an external authority trusted by the relying party. Identity validation and chain validation still matter.</td></tr>
+<tr><td>Root of trust</td><td>The trusted starting point for verification, such as a root certificate or hardware trust anchor. A root certificate in a trust store anchors a certificate chain.</td></tr>
+<tr><td>Certificate signing request (CSR) generation</td><td>Produce a request containing a public key and identity details, signed using the corresponding private key. Keep the private key secret; do not send it to the issuer.</td></tr>
+<tr><td>Wildcard</td><td>A certificate covering names under a specified domain pattern. <code>*.example.com</code> normally covers <code>shop.example.com</code>, not the base domain or multiple nested levels unless separately included. Broad coverage increases the impact of key theft.</td></tr>
+</tbody></table></div>
+<h4 id="encryption">Encryption</h4>
+<p><strong>Encryption</strong> transforms readable plaintext into ciphertext using an algorithm and key. It protects confidentiality; integrity needs an authenticated construction or separate integrity protection.</p>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and practical example</th></tr></thead><tbody>
+<tr><td>Protocols</td><td>Rules governing secure exchanges, including negotiation and verification. Transport Layer Security (TLS) protects many client-server communications; Internet Protocol Security (IPSec) can protect network traffic.</td></tr>
+<tr><td>Symmetric</td><td>The same secret key encrypts and decrypts. Efficient for bulk data, but safe distribution of the key is a challenge.</td></tr>
+<tr><td>Asymmetric</td><td>Uses a mathematically related public/private key pair. Supports signatures and key establishment; usually paired with symmetric encryption for bulk data.</td></tr>
+<tr><td>Full disk</td><td>Encrypts the disk&#x27;s protected contents at rest. Helps against stolen powered-off devices; an unlocked machine may still expose data.</td></tr>
+<tr><td>Partition</td><td>Encrypts a selected disk partition. Other partitions may remain readable.</td></tr>
+<tr><td>File</td><td>Encrypts individual files; filenames or metadata may remain visible depending on the system.</td></tr>
+<tr><td>Volume</td><td>Encrypts a logical storage volume, which may span storage devices.</td></tr>
+<tr><td>Database</td><td>Encrypts a database or database storage. Authorized queries may still return plaintext.</td></tr>
+<tr><td>Record</td><td>Encrypts selected records or fields. Useful for especially sensitive values with narrower key access.</td></tr>
+<tr><td>Transport/communication</td><td>Encrypts data while moving between endpoints. Hop-by-hop protection can expose data at intermediaries; end-to-end protection confines decryption to intended endpoints.</td></tr>
+<tr><td>Key exchange</td><td>Establishes shared keying material securely. Authenticate the parties to prevent an attacker substituting their own exchange.</td></tr>
+<tr><td>Algorithms</td><td>Mathematical methods implementing encryption, hashing, or signatures. Select well-reviewed algorithms and appropriate modes; custom cryptography is difficult to secure.</td></tr>
+<tr><td>Key length</td><td>Size of the key and one contributor to security. Different algorithm families cannot be compared by bit length alone. Long keys do not fix poor randomness or stolen keys.</td></tr>
+</tbody></table></div>
+<h4 id="other-cryptographic-concepts">Other cryptographic concepts</h4>
+<ul>
+<li style="margin-left:0.0em"><strong>Digital signatures:</strong> A private key signs data and a public key verifies it, supporting integrity, origin authentication, and evidence for non-repudiation. Signing does not hide the message.</li>
+<li style="margin-left:0.0em"><strong>Salting:</strong> Add a unique random value to each password before applying a password-hashing scheme. It prevents identical passwords from having identical stored hashes and limits reuse of precomputed attacks. Salts are usually stored with hashes; they are not encryption keys.</li>
+<li style="margin-left:0.0em"><strong>Tools:</strong> Certificate utilities, key-management services, hardware-protected key stores, disk encryption tools, and cryptographic libraries perform different jobs. Prefer protected key generation/storage and established libraries; verify a tool&#x27;s defaults and permissions.</li>
+<li style="margin-left:0.0em"><strong>Obfuscation:</strong> Makes information harder to understand without necessarily providing cryptographic confidentiality. Encoding or scrambled variable names are not substitutes for encryption.</li>
+<li style="margin-left:0.0em"><strong>Hashing algorithms:</strong> Produce a digest useful for integrity checks and identifiers. A hash cannot generally be “decrypted.” Password storage needs a dedicated, deliberately expensive password-hashing scheme, not a fast general-purpose hash alone.</li>
+</ul>
+<p><strong>Exam distinction:</strong> Encryption hides content; hashing summarizes content; signatures authenticate signed content. A hash from an untrusted source does not prove a file is trustworthy.</p>
+<h2 id="20-threats-vulnerabilities-and-attacks--24">2.0 Threats, Vulnerabilities, and Attacks — 24%</h2>
+<h3 id="21-explain-characteristics-of-threats-and-vulnerabilities">2.1 Explain characteristics of threats and vulnerabilities</h3>
+<p>A <strong>threat</strong> is a potential cause of harm; a <strong>vulnerability</strong> is a weakness that could be exploited. <strong>Risk</strong> depends on the possibility of harm and its consequences. An <strong>exploit</strong> is a method of taking advantage of a weakness.</p>
+<h4 id="threats">Threats</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Threat feeds</td><td>Streams of indicators or intelligence, such as malicious domains. Evaluate freshness, relevance, provenance, and false positives before blocking.</td></tr>
+<tr><td>Likelihood</td><td>How probable an event is in a given context. An internet-facing vulnerable service is generally more exposed than an isolated equivalent.</td></tr>
+<tr><td>Impact</td><td>Expected harm: service interruption, disclosure, financial loss, or physical consequences. A brief outage can be severe for a safety-critical service.</td></tr>
+<tr><td>Intelligence sources</td><td>Internal logs, vendor advisories, government alerts, research, and information-sharing groups. Corroborate sources and distinguish raw data from analyzed intelligence.</td></tr>
+<tr><td>Life cycle</td><td>Threat activity develops from preparation and reconnaissance through access, persistence, actions, and possible cleanup. Intelligence also has a collection-analysis-distribution-feedback cycle; the PDF does not specify one model here.</td></tr>
+</tbody></table></div>
+<h4 id="vulnerabilities">Vulnerabilities</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Scoring; Common Vulnerability Scoring System (CVSS)</td><td>A structured way to describe vulnerability severity. A severity score does not alone establish your organization&#x27;s risk or prove exploitation.</td></tr>
+<tr><td>Prioritization</td><td>Order remediation using severity, exploitation evidence, exposure, asset importance, and available controls. An actively exploited medium-severity flaw can outrank an inaccessible high-severity flaw.</td></tr>
+<tr><td>Vulnerability types</td><td>Software defects, configuration errors, weak credentials, design weaknesses, and process/control gaps. Some are fixed by patches; others need configuration or workflow changes.</td></tr>
+<tr><td>Common Vulnerabilities and Exposures (CVE)</td><td>Identifiers for publicly disclosed vulnerabilities. One identifier names a specific vulnerability; it is not its score or the patch itself.</td></tr>
+</tbody></table></div>
+<h3 id="22-describe-common-threat-actors-and-motivations">2.2 Describe common threat actors and motivations</h3>
+<h4 id="threat-actors">Threat actors</h4>
+<div class="table-wrap"><table><thead><tr><th>Actor</th><th>Typical characteristics and example</th></tr></thead><tbody>
+<tr><td>Crime syndicate/organized crime</td><td>Coordinated profit-seeking groups; credential theft, fraud, and extortion operations.</td></tr>
+<tr><td>Terrorist</td><td>Seeks fear or disruption to advance an ideology; may target critical infrastructure.</td></tr>
+<tr><td>Unskilled attacker</td><td>Uses readily available tools with limited expertise; can still cause serious harm.</td></tr>
+<tr><td>Hacktivist</td><td>Uses attacks to advance a social or political cause; defacement or service disruption.</td></tr>
+<tr><td>Insider</td><td>Has or had legitimate access; may steal data or deliberately sabotage systems. Contractors can be insiders too.</td></tr>
+<tr><td>Accidental/unintentional</td><td>Causes harm without malicious intent, such as sharing a confidential folder publicly.</td></tr>
+<tr><td>Competitor</td><td>Seeks business advantage, such as access to proprietary designs.</td></tr>
+<tr><td>State-sponsored</td><td>Supported by a government; may pursue strategic espionage or disruption with substantial resources.</td></tr>
+</tbody></table></div>
+<h4 id="motivations">Motivations</h4>
+<div class="table-wrap"><table><thead><tr><th>Motivation</th><th>Meaning/example</th></tr></thead><tbody>
+<tr><td>Financial</td><td>Steal funds, monetize accounts, or sell data.</td></tr>
+<tr><td>Influence</td><td>Shape beliefs, decisions, or public perception.</td></tr>
+<tr><td>Intellectual property</td><td>Obtain designs, research, algorithms, or trade secrets.</td></tr>
+<tr><td>Notoriety</td><td>Gain recognition or status.</td></tr>
+<tr><td>Espionage</td><td>Secretly collect strategic or sensitive intelligence.</td></tr>
+<tr><td>Fear/chaos</td><td>Create alarm, confusion, or instability.</td></tr>
+<tr><td>Extortion</td><td>Demand payment by threatening disruption or disclosure.</td></tr>
+<tr><td>General curiosity</td><td>Explore systems, sometimes without understanding boundaries or harm.</td></tr>
+<tr><td>Revenge</td><td>Retaliate for a perceived wrong.</td></tr>
+<tr><td>Ideological</td><td>Advance a belief system or cause.</td></tr>
+<tr><td>Political</td><td>Affect government, elections, or policy.</td></tr>
+<tr><td>Ethical</td><td>Authorized research to identify and responsibly disclose weaknesses. Benevolent intent alone does not authorize access.</td></tr>
+</tbody></table></div>
+<h4 id="attributes-of-actors">Attributes of actors</h4>
+<p><strong>Internal/external</strong> describes access and relationship to the organization. <strong>Resources/funding</strong> affects scale and persistence. <strong>Sophistication/capability</strong> describes technical and operational ability. Do not identify an actor solely from a tool: a simple attack can be used by a sophisticated group, and multiple motivations can coexist.</p>
+<h3 id="23-describe-threat-vectors-and-sources">2.3 Describe threat vectors and sources</h3>
+<p>A <strong>vector</strong> is the route used to reach a target. An <strong>advanced persistent threat (APT)</strong> is a capable, sustained campaign or actor pursuing long-term objectives; it is not a single malware type.</p>
+<div class="table-wrap"><table><thead><tr><th>Vector/source and listed components</th><th>Definition and practical example</th></tr></thead><tbody>
+<tr><td>Message-based: email; Short Message Service (SMS); Rich Communication Services (RCS); instant messaging; collaboration tools</td><td>Messages deliver malicious links, files, impersonation, or urgent requests. A compromised colleague&#x27;s collaboration account can make an attack appear internal and trustworthy.</td></tr>
+<tr><td>Image-based: Quick Response (QR) codes; embedded content; Completely Automated Public Turing test to tell Computers and Humans Apart (CAPTCHA)</td><td>Images can conceal destinations or carry embedded data. A fake CAPTCHA page may instruct a user to run a harmful command. The test itself is not inherently malicious; attackers abuse the surrounding workflow.</td></tr>
+<tr><td>Attachment-based: embedded macros; Rich Text Format (RTF); Portable Document Format (PDF)</td><td>Files may contain active code, exploit a reader, or link to credential theft pages. A document asking the user to enable macros is a warning sign. The source uses “Portable Document Formats”; the standard expansion is singular.</td></tr>
+<tr><td>Browser-based: extensions; JavaScript; password managers; cookies; session tokens</td><td>Malicious scripts or extensions can steal information and authenticated sessions. A password manager is normally protective, but a malicious extension, compromised vault, or fake manager can become an entry point.</td></tr>
+<tr><td>Network-based: infrastructure devices; virtualized devices; session keys</td><td>Routers, firewalls, virtual appliances, and keying material may be compromised. A stolen session key may expose protected traffic; a weakly managed virtual firewall can permit lateral movement.</td></tr>
+<tr><td>Remote access: remote desktop; Virtual Network Computing (VNC); virtual private network (VPN)</td><td>Remote administration and connectivity expand access paths. Exposed services, weak credentials, or an unpatched gateway can provide entry.</td></tr>
+<tr><td>Endpoint-based: mobile devices; workstations; servers; tablets; trusted devices</td><td>Compromise a device to access accounts or data. “Trusted” describes an assigned status, not proof a device is clean.</td></tr>
+<tr><td>Built-in tools; living-off-the-land tools</td><td>Attackers reuse legitimate utilities to execute actions or maintain access. A normal shell or administrative utility running under an unexpected account can be suspicious even without a new malware file.</td></tr>
+<tr><td>Supply chain-based: third-party providers; managed service providers; logistic providers; Software as a Service (SaaS) providers</td><td>Compromise a trusted dependency or partner. A vendor&#x27;s remote-management account or a tampered delivered device can affect many customers.</td></tr>
+<tr><td>External media-based: malicious Universal Serial Bus (USB)</td><td>Removable devices can carry malware, emulate keyboards, or attack device firmware. A found USB drive is not safe simply because a malware scan is clean.</td></tr>
+<tr><td>Human-based: impersonation; contractor; visitor; biometric; watering hole</td><td>Abuse trust or identity workflows. A fake contractor requests access; a spoofed biometric may defeat poorly designed verification. A watering hole compromises a site likely to be visited by a target group.</td></tr>
+<tr><td>Internet of Things (IoT): cameras; sensors; printers</td><td>Connected appliances may have weak updates, passwords, or segmentation. A compromised printer can expose documents and provide a network foothold.</td></tr>
+<tr><td>Operational technology (OT)</td><td>Systems that monitor or control physical processes. Compromise can change equipment behavior and create safety consequences.</td></tr>
+<tr><td>Physical-based: lock and key; access vestibule; access passes</td><td>Lost keys, copied passes, bypassed locks, or misuse of controlled entry spaces enable unauthorized physical access. An access vestibule controls passage through sequential doors.</td></tr>
+<tr><td>Signal-based: Bluetooth; radio frequency (RF); near-field communication (NFC)</td><td>Wireless proximity or radio interfaces can expose pairing, authentication, or data-exchange weaknesses. A relay attack can extend an apparent proximity interaction.</td></tr>
+</tbody></table></div>
+<h3 id="24-explain-types-of-vulnerabilities-and-attack-surfaces">2.4 Explain types of vulnerabilities and attack surfaces</h3>
+<p>An <strong>attack surface</strong> is the set of exposed interfaces, identities, processes, and assets that could be attacked.</p>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and practical example</th></tr></thead><tbody>
+<tr><td>Unsupported products</td><td>Vendor support/security fixes have ended. Replace, isolate, or otherwise control them.</td></tr>
+<tr><td>Unpatched systems</td><td>Available fixes have not been applied. Confirm dependencies and prioritize exposure, then verify remediation.</td></tr>
+<tr><td>Obsolete systems</td><td>Technology no longer suitable for current needs, even if some support remains. It may lack needed security features.</td></tr>
+<tr><td>Unmanaged systems</td><td>Assets outside inventory, configuration, or monitoring processes. An unknown server can miss every patch cycle.</td></tr>
+<tr><td>Ports and services</td><td>Listening interfaces expose functionality. Disable unnecessary services and restrict required ones.</td></tr>
+<tr><td>Applications: race conditions</td><td>Outcomes depend on timing or concurrent actions. An attacker changes a resource between validation and use.</td></tr>
+<tr><td>Time-of-check (TOC); time-of-use (TOU)</td><td>A check succeeds, but the checked object changes before it is used. Checking a file&#x27;s permissions and later opening a replaced file illustrates the gap. Use atomic operations where appropriate.</td></tr>
+<tr><td>Malicious update</td><td>A tampered or compromised update installs harmful code. Validate provenance, signatures, and deployment behavior.</td></tr>
+<tr><td>Code: hardcoded secrets</td><td>Passwords or keys embedded in code, images, or configuration distributed with software. Moving code to a private repository does not remove exposed secrets; rotate them.</td></tr>
+<tr><td>Unsafe exception handling</td><td>Errors reveal sensitive details, skip checks, or leave inconsistent state. A crash message should not disclose a database password.</td></tr>
+<tr><td>Operating system (OS)-based</td><td>Kernel, driver, permission, or default-service weaknesses. A local flaw can elevate a limited user to administrator.</td></tr>
+<tr><td>Virtualization</td><td>Hypervisor, management-plane, image, or isolation weaknesses. An escape from a guest can affect the host or other guests.</td></tr>
+<tr><td>Zero-day</td><td>A vulnerability exploited or exposed before defenders have an effective available fix, commonly before vendor awareness or patch release. Apply layered controls and monitor while awaiting remediation.</td></tr>
+<tr><td>Cryptographic vulnerabilities</td><td>Weak algorithms, poor randomness, bad certificate validation, reused nonces, or key exposure. Strong encryption fails if the private key is public.</td></tr>
+<tr><td>Unmanaged/stale credentials</td><td>Secrets without ownership or obsolete accounts still usable. Disable former contractor access and rotate forgotten service credentials.</td></tr>
+<tr><td>Rogue devices</td><td>Unauthorized or malicious devices, such as an unapproved wireless access point.</td></tr>
+<tr><td>Shadow information technology (shadow IT)</td><td>Technology used without organizational approval/visibility. A department&#x27;s private file-sharing account bypasses retention and access controls.</td></tr>
+<tr><td>Wireless and low-powered communications</td><td>Radio exposure, insecure pairing, limited processing, and weak update capability can constrain safeguards.</td></tr>
+<tr><td>Large language models (LLMs)</td><td>Models generating language can mishandle untrusted instructions, disclose data, or produce unreliable output; see 2.6.</td></tr>
+<tr><td>Identity providers</td><td>Central identity services are high-impact targets. Bad federation configuration or stolen signing keys can enable broad impersonation.</td></tr>
+<tr><td>Mobile devices</td><td>Loss, malicious applications, weak screen locks, outdated software, and insecure connections expose data.</td></tr>
+<tr><td>Misconfiguration</td><td>Settings unintentionally weaken security. An administrative interface open to the internet is an example.</td></tr>
+<tr><td>Public repositories</td><td>Accidental disclosure of secrets, internal code, or sensitive configuration. Scan history as well as current files.</td></tr>
+<tr><td>Public object storage</td><td>Cloud objects exposed through public permissions or links. Public access should be deliberate, scoped, and monitored.</td></tr>
+</tbody></table></div>
+<h3 id="25-given-a-scenario-analyze-indicators-of-malicious-activity">2.5 Given a scenario, analyze indicators of malicious activity</h3>
+<h4 id="malware-attacks">Malware attacks</h4>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Meaning and likely evidence</th></tr></thead><tbody>
+<tr><td>Ransomware</td><td>Encrypts, disrupts, or steals data to demand payment. Mass file changes, ransom notes, and backup deletion are clues.</td></tr>
+<tr><td>Trojan</td><td>Appears legitimate but performs hidden malicious actions. A fake installer also starts an unauthorized remote-access process.</td></tr>
+<tr><td>Worm</td><td>Propagates between systems without needing a user to attach it to each new host. Repeated scanning and similar infections can indicate spread.</td></tr>
+<tr><td>Spyware</td><td>Secretly collects information. Unexplained outbound reporting or surveillance behavior may be clues.</td></tr>
+<tr><td>Adware</td><td>Delivers advertising, sometimes with intrusive tracking or unwanted installation. Unexpected redirects and browser changes are clues.</td></tr>
+<tr><td>Virus</td><td>Infects a host file or program and spreads as infected content executes or moves.</td></tr>
+<tr><td>Rootkit</td><td>Hides malicious activity or preserves privileged access by altering low-level behavior. System views may disagree with independent evidence.</td></tr>
+<tr><td>Keylogger</td><td>Records keystrokes, through software or hardware, to obtain credentials or other data.</td></tr>
+<tr><td>Logic bomb</td><td>Executes when a condition is met, such as a date or an account&#x27;s deletion.</td></tr>
+<tr><td>Fileless malware</td><td>Uses memory, scripts, registry data, or legitimate tools rather than relying primarily on a conventional executable file. It can still leave logs and persistence artifacts.</td></tr>
+</tbody></table></div>
+<h4 id="physical-attacks">Physical attacks</h4>
+<p><strong>Tailgating:</strong> Follow an authorized person through a controlled door. <strong>Shoulder surfing:</strong> Observe screens or typed secrets. <strong>Skimming:</strong> Capture payment-card information through a concealed reader. <strong>Forced entry:</strong> Defeat or damage a physical barrier. Match badge records, footage, physical damage, and eyewitness accounts; one source rarely tells the whole story.</p>
+<h4 id="network-attacks">Network attacks</h4>
+<div class="table-wrap"><table><thead><tr><th>Attack</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Distributed denial of service (DDoS)</td><td>Many sources exhaust a service or link. A denial of service (DoS) need not be distributed. Rate limiting and upstream filtering address different bottlenecks.</td></tr>
+<tr><td>Protocol downgrade</td><td>Force use of weaker security settings or protocols. Failed strong negotiation followed by an unexpected weak connection warrants investigation.</td></tr>
+<tr><td>Rogue</td><td>An unauthorized network device/service, often impersonating a legitimate one. An unfamiliar access point copying the corporate network name is a clue.</td></tr>
+<tr><td>Sniffing</td><td>Capture traffic for inspection or theft. Encryption limits readable contents but may not hide metadata.</td></tr>
+<tr><td>Spoofing</td><td>Falsify identity or addressing information. An unexpected address-to-device mapping may indicate impersonation.</td></tr>
+<tr><td>On-path</td><td>Position between communicating parties to observe, redirect, or modify exchanges. Correct certificate validation and authenticated encryption help resist it.</td></tr>
+<tr><td>Domain Name System (DNS) attacks</td><td>Attack name resolution through tampering, hijacking, tunneling, or disruption. Unexpected answers or high-volume unusual queries can be clues.</td></tr>
+<tr><td>Cache poisoning</td><td>Insert false information into a cache. A poisoned DNS cache redirects a legitimate hostname to an attacker-controlled destination.</td></tr>
+</tbody></table></div>
+<h4 id="social-engineering-attacks">Social engineering attacks</h4>
+<div class="table-wrap"><table><thead><tr><th>Attack</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Smishing</td><td>Phishing through text messages: a fake delivery fee link.</td></tr>
+<tr><td>Vishing</td><td>Voice-based deception: a fake help-desk caller requests a code.</td></tr>
+<tr><td>Phishing</td><td>Deceptive messages seek access, money, or information.</td></tr>
+<tr><td>Whaling</td><td>Targets senior or high-value personnel.</td></tr>
+<tr><td>Spear phishing</td><td>Tailored phishing aimed at a specific person or group.</td></tr>
+<tr><td>Quishing</td><td>Phishing through QR codes, such as a replaced parking-payment sticker.</td></tr>
+<tr><td>Impersonation</td><td>Pretend to be a trusted identity or organization. Verify through an independently known channel.</td></tr>
+<tr><td>Deepfake</td><td>Synthetic or altered media imitates a person. A convincing executive voice is not sufficient authorization for a payment.</td></tr>
+</tbody></table></div>
+<h4 id="indicators-of-compromise">Indicators of compromise</h4>
+<div class="table-wrap"><table><thead><tr><th>Indicator</th><th>Interpretation and limitation</th></tr></thead><tbody>
+<tr><td>Hash</td><td>Identifies a known file or artifact; changing the file changes its hash. A match requires reliable context.</td></tr>
+<tr><td>Internet Protocol (IP) address; domain</td><td>May identify attack infrastructure. Shared hosting and reassignment can create false positives.</td></tr>
+<tr><td>Malicious processes</td><td>Unexpected executable, parent-child chain, privileges, or network behavior. A familiar process name alone does not prove legitimacy.</td></tr>
+<tr><td>File system artifacts</td><td>New persistence files, renamed documents, suspicious scripts, or unexpected scheduled-task definitions.</td></tr>
+<tr><td>Timestamp</td><td>Helps build a timeline; clocks, time zones, and deliberate tampering can mislead.</td></tr>
+<tr><td>Log manipulation</td><td>Missing entries, disabled logging, altered records, or unexplained gaps can indicate concealment.</td></tr>
+<tr><td>Excessive resource consumption</td><td>Unusual processor, memory, disk, or network use may indicate mining, malware, or service exhaustion; legitimate workloads can do this too.</td></tr>
+<tr><td>Plaintext strings</td><td>Readable commands, domains, paths, or messages in a file/memory image may reveal behavior. Treat them as clues, not proof of execution.</td></tr>
+<tr><td>Account lockout</td><td>Repeated failed authentication may indicate attacks, stale credentials, or user error.</td></tr>
+<tr><td>Impossible travel</td><td>Logins from implausibly distant locations in too little time. VPN exit locations can explain some cases.</td></tr>
+<tr><td>Concurrent sessions</td><td>Simultaneous activity can indicate stolen credentials/tokens, but multiple devices may be legitimate.</td></tr>
+</tbody></table></div>
+<h4 id="application-attacks">Application attacks</h4>
+<div class="table-wrap"><table><thead><tr><th>Attack</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Injection</td><td>Untrusted input becomes executable commands or queries. Structured Query Language (SQL) injection alters database queries; parameterized queries keep data separate from query structure.</td></tr>
+<tr><td>Buffer overflow</td><td>Data exceeds a memory buffer, potentially causing a crash or code execution. Memory-safe design and bounds checking address the cause.</td></tr>
+<tr><td>Replay</td><td>Reuse a previously valid message/token to perform an unauthorized action. Fresh challenges, expiration, and replay detection reduce risk.</td></tr>
+<tr><td>Privilege escalation</td><td>Gain permissions beyond those authorized, vertically to a stronger role or horizontally to another user&#x27;s resources.</td></tr>
+<tr><td>Forgery</td><td>Fake a trusted request or artifact. A forged cross-site request may exploit a browser&#x27;s authenticated session if the application lacks request protections.</td></tr>
+<tr><td>Directory traversal</td><td>Manipulate paths to escape an intended directory, for example accessing protected files through parent-directory references.</td></tr>
+</tbody></table></div>
+<h4 id="credential-attacks">Credential attacks</h4>
+<p><strong>Password spraying:</strong> Try a small number of common passwords across many accounts. <strong>Brute force:</strong> Systematically try many candidate passwords, often against one account or offline hash. <strong>User enumeration:</strong> Learn which usernames exist from responses or timing. <strong>Replay:</strong> Reuse captured authentication material. <strong>Multifactor authentication (MFA) bypass:</strong> Defeat additional verification through stolen sessions, adversary-controlled login proxies, weak recovery, or push fatigue. Two passwords are still one factor category; factor categories include knowledge, possession, and inherence.</p>
+<p><strong>Scenario rule:</strong> Correlate indicators across time, account, device, and source. An alert is a lead; verify before declaring a compromise or blocking a shared service.</p>
+<h3 id="26-summarize-threats-and-vulnerabilities-associated-with-artificial-intelligence-usage">2.6 Summarize threats and vulnerabilities associated with artificial intelligence usage</h3>
+<p><strong>Artificial intelligence (AI)</strong> systems may learn patterns, generate content, or take actions. Their security includes the model, training data, retrieval sources, accounts, tools, and surrounding application.</p>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and practical example</th></tr></thead><tbody>
+<tr><td>Model manipulation</td><td>Alter model parameters, configuration, or behavior to produce attacker-desired results. A tampered model artifact behaves differently while appearing legitimate.</td></tr>
+<tr><td>Poisoning</td><td>Insert misleading or harmful material into training/fine-tuning data or other trusted data sources. A poisoned knowledge source may encourage wrong security guidance.</td></tr>
+<tr><td>Prompt injection</td><td>Untrusted input attempts to redirect instructions. A document being summarized tells the assistant to export confidential records. Indirect injection comes through retrieved content rather than a user&#x27;s direct prompt.</td></tr>
+<tr><td>Data loss</td><td>Sensitive information leaks through prompts, output, logs, retrieval, or tool calls. Restrict data access and avoid unnecessary sensitive inputs.</td></tr>
+<tr><td>Bias</td><td>Systematic unfair or skewed results. A model trained on unrepresentative records may misclassify certain groups.</td></tr>
+<tr><td>Explainability</td><td>Ability to understand why an output or decision occurred. Limited explainability makes high-impact decisions harder to audit.</td></tr>
+<tr><td>Hallucinations</td><td>Plausible but false generated statements. A fabricated advisory or command can cause an analyst to make the wrong change. Verify important output against reliable evidence.</td></tr>
+<tr><td>Jailbreaking</td><td>Attempts to circumvent a model&#x27;s behavioral safeguards. It overlaps with prompt injection, but not every injection is a jailbreak.</td></tr>
+<tr><td>Evasion</td><td>Craft input to avoid detection or produce a wrong classification, such as modifying a malicious sample so a detector misses it.</td></tr>
+<tr><td>Privacy</td><td>Personal information may be collected, retained, inferred, or exposed. Limit collection, access, and retention.</td></tr>
+<tr><td>Ethical considerations</td><td>Assess consent, fairness, accountability, appropriate use, and effects on people. Assign responsibility for decisions and escalation.</td></tr>
+<tr><td>Session hijacking</td><td>Steal or misuse a session to access an AI application, its history, or connected tools. Secure sessions and recheck authorization.</td></tr>
+<tr><td>Code execution</td><td>Generated or attacker-influenced code runs with tool permissions. Sandbox execution, limit privileges, validate parameters, and require appropriate approval for consequential actions.</td></tr>
+</tbody></table></div>
+<p><strong>Practical distinction:</strong> Treat retrieved text as data, not authority. Input filters alone are insufficient; independently enforce tool permissions and output validation. See the <a href="https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html">Open Worldwide Application Security Project (OWASP) prompt-injection guidance</a>.</p>
+<h2 id="30-security-architecture--19">3.0 Security Architecture — 19%</h2>
+<h3 id="31-compare-and-contrast-security-implications-of-different-architecture-models">3.1 Compare and contrast security implications of different architecture models</h3>
+<h4 id="architecture-and-infrastructure-concepts">Architecture and infrastructure concepts</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and security implications</th></tr></thead><tbody>
+<tr><td>Cloud</td><td>Provider-operated computing services consumed over a network. Customers still manage responsibilities such as identities, data, and configuration; the split depends on the service.</td></tr>
+<tr><td>Serverless</td><td>Provider manages much of the execution infrastructure while customers deploy functions or services. Secure code, permissions, dependencies, and event triggers; servers still exist.</td></tr>
+<tr><td>Multicloud</td><td>Use services from multiple cloud providers. It can reduce some dependencies but increases identity, monitoring, and policy complexity.</td></tr>
+<tr><td>Hybrid deployment</td><td>Combine distinct environments, often on-premises/private resources and public cloud. Secure the connections and ensure consistent identity and visibility.</td></tr>
+<tr><td>Private deployment</td><td>Cloud dedicated to one organization. Greater control does not automatically mean better security; skilled administration is still necessary.</td></tr>
+<tr><td>Public deployment</td><td>Provider services offered to multiple customers with logical isolation. Avoid public exposure caused by customer-side permission errors.</td></tr>
+<tr><td>Community deployment</td><td>Cloud shared by organizations with common requirements, such as a sector&#x27;s governance needs. Define shared responsibilities and isolation.</td></tr>
+<tr><td>Infrastructure as Code (IaC)</td><td>Define infrastructure through machine-readable, versioned configuration. Review changes, scan configurations, control secrets, and detect drift from approved definitions.</td></tr>
+<tr><td>OT</td><td>Physical-process systems require safety, uptime, and controlled change. Older equipment may not tolerate ordinary scanning or patch schedules.</td></tr>
+<tr><td>On-premises infrastructure</td><td>Organization-operated facilities and systems. Provides direct control but requires physical security, maintenance, power, staffing, and recovery planning.</td></tr>
+<tr><td>Air-gapped network</td><td>Intentionally lacks a network connection to other networks. Removable media, maintenance laptops, and people can still cross the boundary.</td></tr>
+<tr><td>Microservices</td><td>Small, separately deployed services communicate over defined interfaces. Many identities, interfaces, dependencies, and secrets must be secured.</td></tr>
+<tr><td>Logical segmentation</td><td>Separate systems through software-enforced boundaries on shared infrastructure. Access rules can isolate a guest network from internal resources.</td></tr>
+<tr><td>Physical segmentation</td><td>Separate through distinct physical equipment or links. Strong separation can cost more and complicate operations.</td></tr>
+</tbody></table></div>
+<h4 id="technical-considerations">Technical considerations</h4>
+<div class="table-wrap"><table><thead><tr><th>Consideration</th><th>What to evaluate</th></tr></thead><tbody>
+<tr><td>Availability</td><td>Can authorized users access the service when required? Identify single points of failure.</td></tr>
+<tr><td>Resilience</td><td>Can the environment withstand or adapt to failures and attacks while maintaining acceptable operation?</td></tr>
+<tr><td>Proprietary vs. open source</td><td>Proprietary software relies on vendor support and licensing; open source offers inspectability and community development. Either can be secure or insecure; evaluate maintenance and supply-chain quality.</td></tr>
+<tr><td>Usability</td><td>Can people reliably use security controls? Unusable workflows can encourage unsafe workarounds.</td></tr>
+<tr><td>Responsibility</td><td>Who patches each component, secures identities, restores data, and investigates alerts? Document the split.</td></tr>
+<tr><td>Compute</td><td>Processing and memory capacity for normal load and security functions, such as encryption or inspection.</td></tr>
+<tr><td>Power requirements</td><td>Electrical needs, backup runtime, cooling, and dependence on the facility.</td></tr>
+<tr><td>Ease of recovery</td><td>How quickly a system can be rebuilt, restored, and verified, including keys and dependencies.</td></tr>
+</tbody></table></div>
+<h4 id="business-considerations">Business considerations</h4>
+<p><strong>Data sovereignty:</strong> Data may be subject to rules tied to jurisdiction and control. <strong>Data classification:</strong> Sensitivity determines suitable placement and safeguards. <strong>Cost:</strong> Include licensing, staffing, migration, security, outages, and exit costs. <strong>Ownership:</strong> Clarify who controls assets and data and who is accountable. <strong>Environmental requirements:</strong> Cooling, space, humidity, power, and physical hazards constrain placement. <strong>Scalability:</strong> Ability to handle growth without weakening controls. <strong>Risk:</strong> Compare likely harm, dependencies, and residual exposure, not just convenience.</p>
+<p><strong>Scenario:</strong> A hospital&#x27;s control equipment may favor an isolated, carefully maintained architecture, while a public information site may favor elastic cloud hosting. Business requirements determine the tradeoffs.</p>
+<h3 id="32-given-a-scenario-manage-the-security-architecture-to-best-protect-the-infrastructure">3.2 Given a scenario, manage the security architecture to best protect the infrastructure</h3>
+<h4 id="infrastructure-considerations">Infrastructure considerations</h4>
+<ul>
+<li style="margin-left:0.0em"><strong>Device placement:</strong> Put controls where they can inspect or enforce the relevant traffic. A firewall cannot protect a path that bypasses it.</li>
+<li style="margin-left:0.0em"><strong>Security zones:</strong> Group resources by sensitivity and trust requirements; mediate traffic between zones. Public-facing services should not freely reach sensitive databases.</li>
+<li style="margin-left:0.0em"><strong>Attack surface:</strong> Reduce unnecessary interfaces, services, permissions, and external exposure.</li>
+<li style="margin-left:0.0em"><strong>Diversity:</strong> Different platforms or implementations can reduce common-mode failure, but they increase administration and testing effort.</li>
+</ul>
+<h4 id="zero-trust-architecture">Zero Trust architecture</h4>
+<p><strong>User authentication</strong> verifies the identity requesting access. <strong>Device management</strong> combines <strong>health</strong> checks (patches, protective software, configuration) and <strong>inventory</strong> (known ownership and device records). <strong>Application access control</strong> grants narrowly scoped access to particular applications rather than assuming all network access is trusted. Example: an authenticated user on an unhealthy device may be denied sensitive application access even while on-site.</p>
+<h4 id="secure-communicationaccess">Secure communication/access</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>VPN</td><td>An authenticated, encrypted connection across an untrusted network. Restrict destination access; a tunnel does not make a compromised endpoint safe.</td></tr>
+<tr><td>Remote access</td><td>Access from outside the local environment. Authenticate users/devices, log sessions, and limit permissions.</td></tr>
+<tr><td>Tunneling</td><td>Encapsulate one protocol within another. Encryption depends on the selected tunnel protocol; encapsulation alone is not confidentiality.</td></tr>
+<tr><td>User management</td><td>Create, update, disable, and review identities and access throughout their life cycle.</td></tr>
+<tr><td>User access; least privilege</td><td>Permit only required resources/actions, with context and duration limits. Separate routine work from privileged administration.</td></tr>
+<tr><td>End-to-end encrypted messaging</td><td>Only intended communicating endpoints can decrypt message contents. Metadata and compromised endpoints can remain exposed.</td></tr>
+<tr><td>Out-of-band management</td><td>A separate management path, ideally isolated from production traffic. Helps administer a failed device but must be strongly protected.</td></tr>
+<tr><td>File transfer</td><td>Move files with authentication, encryption, integrity checks, and appropriate destination permissions. Avoid exposing credentials or leaving unrestricted download links.</td></tr>
+<tr><td>Security Service Edge (SSE)</td><td>Cloud-delivered security capabilities for access to web, cloud, and private applications. Assess identity integration, data handling, provider dependence, and policy consistency.</td></tr>
+</tbody></table></div>
+<h4 id="identity-management-and-failure-modes">Identity management and failure modes</h4>
+<ul>
+<li style="margin-left:0.0em"><strong>Group Managed Service Accounts (gMSAs):</strong> Managed domain service identities with automated password handling for supported services. Limit where they can be used and what they can access.</li>
+<li style="margin-left:0.0em"><strong>Least privilege access accounts:</strong> Dedicated accounts with only required privileges, often separated from ordinary user identities.</li>
+<li style="margin-left:0.0em"><strong>Privilege creep:</strong> Permissions accumulate as responsibilities change without old access being removed. Periodic access reviews and role changes should remove obsolete rights.</li>
+<li style="margin-left:0.0em"><strong>Failure modes:</strong> <strong>Fail-open</strong> allows access when a control fails, favoring availability but risking exposure. <strong>Fail-closed</strong> denies access, favoring restriction but risking outage. <strong>Fail-safe</strong> means transition to a state appropriate for safety; it is not always identical to fail-closed. A life-safety exit may unlock while a secure database denies connections.</li>
+</ul>
+<h3 id="33-summarize-concepts-and-strategies-used-to-protect-data">3.3 Summarize concepts and strategies used to protect data</h3>
+<h4 id="data-types-and-states">Data types and states</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Structured</td><td>Data in a defined schema, such as database rows and columns.</td></tr>
+<tr><td>Unstructured</td><td>Data without a uniform tabular schema, such as emails, documents, images, and recordings.</td></tr>
+<tr><td>Data at rest</td><td>Stored data: disks, backups, database files. Use storage encryption and access restrictions.</td></tr>
+<tr><td>Data in use</td><td>Data being processed, often in memory. Restrict execution access and protect processing environments; disk encryption alone does not cover it.</td></tr>
+<tr><td>Data in transit</td><td>Data moving over a connection. Use authenticated secure transport and validate endpoints.</td></tr>
+</tbody></table></div>
+<h4 id="data-classifications">Data classifications</h4>
+<p>Classification labels are policy-specific and are not a universal single ordered ladder.</p>
+<div class="table-wrap"><table><thead><tr><th>Label</th><th>Typical meaning/example</th></tr></thead><tbody>
+<tr><td>Sensitive</td><td>Disclosure or misuse could harm people or the organization; customer records.</td></tr>
+<tr><td>Secret</td><td>A formal high-sensitivity category in some classification schemes. Apply the specified access and handling rules.</td></tr>
+<tr><td>Critical</td><td>Essential to operations; loss or corruption has serious consequences. A critical service&#x27;s data may also be confidential.</td></tr>
+<tr><td>Confidential</td><td>Access limited to authorized parties; internal contracts or personnel information.</td></tr>
+<tr><td>Public</td><td>Approved for unrestricted disclosure; published marketing material still needs integrity protection.</td></tr>
+<tr><td>Top secret</td><td>Very high-sensitivity category in certain formal schemes, requiring stringent handling.</td></tr>
+<tr><td>Restricted</td><td>Closely limited access, often to named roles or groups. The exact ranking depends on policy.</td></tr>
+</tbody></table></div>
+<h4 id="methods-used-to-secure-data">Methods used to secure data</h4>
+<div class="table-wrap"><table><thead><tr><th>Method</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Masking</td><td>Hide part or all of a value in a display or test copy. Show only the last four digits of an account number. Underlying originals may still exist.</td></tr>
+<tr><td>Hashing</td><td>Create a digest for integrity checking or comparison. Hashes of low-entropy personal values can still be guessed; hashing is not automatic anonymization.</td></tr>
+<tr><td>Filtering</td><td>Allow, reject, or redact data according to rules. Prevent a sensitive field from being returned to an unauthorized user.</td></tr>
+<tr><td>Tokenization</td><td>Replace sensitive data with a surrogate token and protect the mapping. A payment application stores a token rather than the original card number.</td></tr>
+<tr><td>Encryption</td><td>Transform content using keys; authorized decryption recovers the original. Protect keys separately from data.</td></tr>
+<tr><td>Data transpose</td><td>The PDF does not define this term. In its data-protection context, a reasonable interpretation is rearranging/shuffling data values or positions to obscure associations. Do not assume ordinary matrix transposition or simple rearrangement provides encryption or reliable anonymization.</td></tr>
+<tr><td>Deidentification</td><td>Remove or transform identifying information to reduce linkage to individuals. Assess reidentification from remaining fields and external data.</td></tr>
+<tr><td>Obfuscation</td><td>Make content less readily understandable. Useful for reducing casual disclosure, but strength varies greatly.</td></tr>
+</tbody></table></div>
+<h4 id="data-protection-roles">Data protection roles</h4>
+<div class="table-wrap"><table><thead><tr><th>Role</th><th>Typical responsibility</th></tr></thead><tbody>
+<tr><td>Data owner</td><td>Accountable business authority deciding classification, acceptable use, and access.</td></tr>
+<tr><td>Data custodian</td><td>Implements storage, backup, permissions, and technical protection.</td></tr>
+<tr><td>Data steward</td><td>Maintains quality, definitions, appropriate use, and governance practices.</td></tr>
+<tr><td>Data operator</td><td>Performs authorized processing or operational handling; exact duties are organization-specific.</td></tr>
+<tr><td>Data controller</td><td>Determines purposes and means of personal-data processing in applicable privacy frameworks.</td></tr>
+<tr><td>Data subprocessor</td><td>Another processor engaged to handle data on behalf of a processor; oversight extends down the chain.</td></tr>
+</tbody></table></div>
+<h4 id="data-handling">Data handling</h4>
+<p><strong>Endpoints:</strong> Control local copies, downloads, caches, and removable storage. <strong>Marking and labeling:</strong> Attach classification metadata or visible markings to support handling rules. <strong>Geofencing:</strong> Restrict actions based on geographic boundaries; location signals can be imperfect. <strong>Data location:</strong> Where data physically or logically resides, including replicas and backups. <strong>Data placement:</strong> The decision to put particular data in particular storage or environments with suitable controls. Location is a fact; placement is an architectural choice.</p>
+<h4 id="data-management-life-cycle">Data management life cycle</h4>
+<ul>
+<li style="margin-left:0.0em"><strong>Creation:</strong> Minimize collection and assign ownership/classification.</li>
+<li style="margin-left:0.0em"><strong>Management:</strong> Control access, accuracy, storage, and protection while maintained.</li>
+<li style="margin-left:0.0em"><strong>Distribution:</strong> Share only with authorized recipients using approved methods.</li>
+<li style="margin-left:0.0em"><strong>Retention:</strong> Keep data for the required purpose and period; account for holds and backups.</li>
+<li style="margin-left:0.0em"><strong>Disposal:</strong> Securely remove or destroy data and verify the result when required.</li>
+</ul>
+<h4 id="data-compliance">Data compliance</h4>
+<p><strong>Standards</strong> set applicable control expectations. <strong>Health data</strong>, <strong>personal information</strong>, <strong>financial data</strong>, and <strong>child/minor data</strong> may have heightened handling requirements. <strong>Intellectual property</strong> needs protection against unauthorized disclosure and use. <strong>Legal data</strong> may require confidentiality, evidence preservation, or restrictions. Requirements depend on jurisdiction, sector, contracts, and data type; classification alone does not establish all obligations.</p>
+<h3 id="34-explain-the-importance-of-resilience-and-recovery-in-security-architecture">3.4 Explain the importance of resilience and recovery in security architecture</h3>
+<h4 id="site-considerations">Site considerations</h4>
+<div class="table-wrap"><table><thead><tr><th>Site/concept</th><th>Meaning and tradeoff</th></tr></thead><tbody>
+<tr><td>Hot</td><td>Equipped and ready for rapid service restoration, often with current replicated data. High cost and synchronization requirements.</td></tr>
+<tr><td>Cold</td><td>Basic space/utilities; equipment and data must be installed/restored. Lower ongoing cost, slower recovery.</td></tr>
+<tr><td>Warm</td><td>Partially equipped and configured; some restoration and preparation remain. Between hot and cold in readiness and cost.</td></tr>
+<tr><td>Environmental</td><td>Evaluate geographic separation, floods, storms, fire, utilities, cooling, and shared hazards. Two sites on the same floodplain may fail together.</td></tr>
+</tbody></table></div>
+<h4 id="platform-diversity">Platform diversity</h4>
+<p><strong>Vendor platform diversity</strong> reduces dependence on one vendor&#x27;s faults or compromise. <strong>Hardware diversity</strong> limits common equipment defects. <strong>Virtualization diversity</strong> can avoid a shared hypervisor weakness but adds operational complexity. Diversity helps only when failure dependencies are genuinely separated.</p>
+<h4 id="redundancy-strategies-and-solutions">Redundancy strategies and solutions</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Load balancing</td><td>Distribute requests across resources. Health checks avoid directing work to failed instances.</td></tr>
+<tr><td>Clustering</td><td>Coordinate multiple nodes to provide a service, using designs such as active-active or active-passive.</td></tr>
+<tr><td>Autoscaling</td><td>Adjust resource count/capacity with demand. Set cost and capacity limits; scaling does not cure all application bottlenecks.</td></tr>
+<tr><td>High availability</td><td>Design to minimize interruption through redundancy and failover. It does not replace backups.</td></tr>
+<tr><td>Multicloud systems</td><td>Use multiple providers to reduce some outage exposure. Shared identity or network dependencies may still fail together.</td></tr>
+<tr><td>Uninterruptible power supply (UPS)</td><td>Short-term battery power and conditioning; supports continued operation or graceful shutdown.</td></tr>
+<tr><td>Redundant power supply (RPS)</td><td>A second power supply path for equipment. Connect to independent feeds where appropriate; two supplies on one circuit share a failure point.</td></tr>
+<tr><td>Power generator</td><td>Longer-duration backup generation requiring fuel, maintenance, and safe transfer.</td></tr>
+<tr><td>Surge protector</td><td>Limits voltage spikes; does not provide outage runtime.</td></tr>
+<tr><td>Storage</td><td>Protect availability and integrity with suitable redundancy, replication, capacity, and access controls. Redundancy can copy corruption or deletion, so it is not a backup.</td></tr>
+</tbody></table></div>
+<h4 id="backups-and-testing">Backups and testing</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Retention</td><td>How long backup versions are preserved. Keep versions old enough to recover from delayed discovery of corruption.</td></tr>
+<tr><td>Immutability</td><td>Prevent alteration/deletion during a protected period. Separate backup administration from compromised production accounts.</td></tr>
+<tr><td>Scope</td><td>Which systems, files, configuration, keys, identities, and dependencies are backed up. Data alone may not rebuild a service.</td></tr>
+<tr><td>Restoration testing</td><td>Actually restore and validate usability, integrity, and timing. A successful backup job is not proof of recoverability.</td></tr>
+<tr><td>Failover testing</td><td>Move service to an alternate component/site and verify access and data consistency.</td></tr>
+<tr><td>Simulation</td><td>Rehearse failure scenarios in controlled conditions to test decisions and procedures.</td></tr>
+<tr><td>Parallel processing</td><td>Run an alternate recovery environment alongside normal operations and compare results without fully cutting over.</td></tr>
+</tbody></table></div>
+<p><strong>Disaster recovery</strong> restores affected technology and services after a major disruption. <strong>Business continuity</strong> sustains essential business operations, potentially through manual workarounds. <strong>Capacity planning</strong> ensures processing, storage, network, power, and staffing can support ordinary and recovery workloads.</p>
+<h4 id="recovery-metrics">Recovery metrics</h4>
+<div class="table-wrap"><table><thead><tr><th>Metric</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Recovery time objective (RTO)</td><td>Target maximum time to restore service after disruption. A two-hour RTO demands a restoration design that can meet two hours.</td></tr>
+<tr><td>Recovery point objective (RPO)</td><td>Target maximum tolerable data loss measured in time. A 15-minute RPO requires recovery data sufficiently recent to meet that objective.</td></tr>
+<tr><td>Mean time to repair (MTTR)</td><td>Average repair duration; measured operational performance, not the recovery target itself.</td></tr>
+<tr><td>Mean time between failures (MTBF)</td><td>Average operating interval between failures for repairable systems. Higher values generally indicate fewer failures, not faster repair.</td></tr>
+</tbody></table></div>
+<p><strong>Exam distinction:</strong> RTO asks “How long can we be down?” RPO asks “How much recent data can we lose?” Replication improves recency but can replicate destructive changes.</p>
+<h2 id="40-security-operations--27">4.0 Security Operations — 27%</h2>
+<h3 id="41-given-a-scenario-apply-mitigating-controls-techniques-and-solutions-to-secure-the-environment">4.1 Given a scenario, apply mitigating controls, techniques, and solutions to secure the environment</h3>
+<h4 id="core-controls">Core controls</h4>
+<p><strong>Segmentation</strong> limits reachability and lateral movement. <strong>Access controls</strong> enforce who/what can perform which actions. <strong>Hardening</strong> removes unnecessary functionality and secures configuration. <strong>Sandboxing</strong> isolates untrusted code for constrained execution or analysis; it is not a guarantee that escape is impossible.</p>
+<h4 id="deception-and-disruption-technology">Deception and disruption technology</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Honeypot</td><td>Decoy system intended to attract or reveal suspicious interaction. Isolate it so it cannot become an attack platform.</td></tr>
+<tr><td>Honeynet</td><td>A network of decoy systems simulating an environment.</td></tr>
+<tr><td>Honeyfile</td><td>Decoy file that alerts on unexpected access, such as a fake sensitive spreadsheet.</td></tr>
+<tr><td>Honeytoken</td><td>Decoy credential, identifier, or data item whose use signals suspicious activity.</td></tr>
+<tr><td>Canary account</td><td>Account not intended for normal use; attempted authentication or access can trigger an alert. Avoid giving it dangerous permissions.</td></tr>
+</tbody></table></div>
+<p><strong>Monitoring/alerting</strong> observes state and behavior, then notifies responders of important events. <strong>Mobile device management (MDM)</strong> centrally enforces settings, inventory, update requirements, and permitted remote actions on enrolled devices. <strong>Application control</strong> uses <strong>allow lists</strong> to permit approved software or <strong>block lists</strong> to reject prohibited software; allow lists require maintenance but limit unknown execution.</p>
+<h4 id="intrusion-detectionprevention-systems">Intrusion detection/prevention systems</h4>
+<p>An <strong>intrusion detection system (IDS)</strong> identifies suspicious activity and alerts. An <strong>intrusion prevention system (IPS)</strong> can act to block it.</p>
+<div class="table-wrap"><table><thead><tr><th>Variant</th><th>Location and role</th></tr></thead><tbody>
+<tr><td>Network-based intrusion detection system (NIDS) / network-based intrusion prevention system (NIPS)</td><td>Inspect traffic at network observation/enforcement points. Encryption and traffic placement affect visibility.</td></tr>
+<tr><td>Host-based intrusion detection system (HIDS) / host-based intrusion prevention system (HIPS)</td><td>Observe or prevent activity on an endpoint, such as file changes or suspicious process behavior.</td></tr>
+<tr><td>Wireless intrusion prevention system (WIPS)</td><td>Detect and, where appropriately configured and authorized, counter wireless threats such as rogue access points.</td></tr>
+</tbody></table></div>
+<p>Detection without blocking avoids some disruption; prevention requires careful tuning to avoid blocking legitimate activity.</p>
+<h4 id="firewalls">Firewalls</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Rate-limiting requests</td><td>Restrict request frequency to reduce abuse. Set limits appropriate to user/service behavior; distributed attacks can bypass simple per-address limits.</td></tr>
+<tr><td>Web application firewall (WAF)</td><td>Inspect web requests for application attacks. Useful as a layer, but it does not repair vulnerable application code.</td></tr>
+<tr><td>Rule-based</td><td>Permit or deny traffic using ordered conditions. Understand evaluation order and default action.</td></tr>
+<tr><td>Unified threat management (UTM)</td><td>Combines multiple security functions in one product. Simplifies administration but may concentrate failure and performance risk.</td></tr>
+<tr><td>Layer 4 / Layer 7</td><td>Layer 4 decisions focus on transport context such as ports and connection state; Layer 7 understands application content/protocols. Decryption may be needed to inspect protected application contents.</td></tr>
+</tbody></table></div>
+<h4 id="content-filters-and-endpoint-security">Content filters and endpoint security</h4>
+<div class="table-wrap"><table><thead><tr><th>Control</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Content filter</td><td>Restricts content, destinations, or categories, such as malicious sites.</td></tr>
+<tr><td>Data loss prevention (DLP)</td><td>Detects and controls prohibited handling or transfer of sensitive data. Rules may inspect content, labels, destinations, or behavior.</td></tr>
+<tr><td>Agent-based</td><td>A component on the device enforces policy or collects data, including some off-network activity.</td></tr>
+<tr><td>Centralized proxy</td><td>An intermediary applies policy to traffic routed through it. Traffic bypassing it may escape inspection.</td></tr>
+<tr><td>Endpoint detection and response (EDR)</td><td>Collects endpoint behavior and supports detection, investigation, and actions such as isolation.</td></tr>
+<tr><td>Extended detection and response (XDR)</td><td>Correlates signals and response across multiple domains, such as endpoints, identity, email, and cloud. Scope varies by product.</td></tr>
+<tr><td>Antivirus</td><td>Detects or blocks malicious software using signatures and other analysis. It is one layer, not complete endpoint defense.</td></tr>
+</tbody></table></div>
+<h4 id="network-access-control">Network access control</h4>
+<p><strong>Captive portals</strong> require a browser interaction before access, commonly on guest networks; a checkbox alone does not establish strong device trust. <strong>802.1X</strong> is a port-based access-control standard using an endpoint supplicant, an authenticator such as a switch/access point, and an authentication server. <strong>Endpoint posture/compliance</strong> checks patch state, protective software, enrollment, or configuration before granting or limiting access.</p>
+<h4 id="repositories-and-application-security">Repositories and application security</h4>
+<ul>
+<li style="margin-left:0.0em"><strong>Secrets scanning:</strong> Detect keys/passwords in repositories and their history. If exposed, revoke/rotate the secret; removing the line is insufficient.</li>
+<li style="margin-left:0.0em"><strong>Input validation:</strong> Accept only expected data types, formats, ranges, and lengths. Combine with safe query/command construction; validation alone does not solve all injection.</li>
+<li style="margin-left:0.0em"><strong>Secure cookies:</strong> Apply appropriate flags and scope: <code>Secure</code> restricts transport to secure connections, <code>HttpOnly</code> limits script access, and <code>SameSite</code> helps reduce cross-site request abuse. None makes a stolen session harmless.</li>
+<li style="margin-left:0.0em"><strong>Static code analysis:</strong> Inspect code without running it to identify possible flaws. Review findings because both missed issues and false positives occur.</li>
+<li style="margin-left:0.0em"><strong>Code signing:</strong> Verify publisher/key identity and that signed content has not changed. A valid signature does not prove code is benign if the signer or signing process is compromised.</li>
+</ul>
+<h4 id="email-security">Email security</h4>
+<div class="table-wrap"><table><thead><tr><th>Technology</th><th>Definition and distinction</th></tr></thead><tbody>
+<tr><td>Domain-based Message Authentication, Reporting, and Conformance (DMARC)</td><td>Uses alignment of the visible sender domain with authenticated sender information and publishes handling/reporting policy.</td></tr>
+<tr><td>Sender Policy Framework (SPF)</td><td>Authorizes sending systems for a domain used in the mail envelope; forwarding can complicate checks.</td></tr>
+<tr><td>DomainKeys Identified Mail (DKIM)</td><td>Uses a domain-associated signature to verify signed message content and domain responsibility.</td></tr>
+<tr><td>Brand Indicators for Message Identification (BIMI)</td><td>Supports display of a verified brand indicator under applicable authentication and provider requirements. It is not a replacement for authentication or content analysis.</td></tr>
+</tbody></table></div>
+<p>These controls reduce certain forms of domain spoofing; lookalike domains and compromised real accounts can still send convincing phishing messages.</p>
+<h4 id="operating-systems-security">Operating systems security</h4>
+<p><strong>Group Policy</strong> centrally applies configuration in supported Windows environments, such as account and device restrictions. <strong>Security-enhanced Linux (SELinux)</strong> enforces mandatory access controls through policy and labels, potentially restricting a compromised process beyond ordinary file permissions.</p>
+<h3 id="42-explain-the-security-implications-of-proper-hardware-software-and-data-asset-management">4.2 Explain the security implications of proper hardware, software, and data asset management</h3>
+<div class="table-wrap"><table><thead><tr><th>Stage/concept</th><th>Definition and security purpose</th></tr></thead><tbody>
+<tr><td>Asset management life cycle</td><td>Track assets from planning through disposal, including ownership, configuration, use, and risk. Unknown assets cannot be reliably protected.</td></tr>
+<tr><td>Planning/scoping</td><td>Decide needed capabilities, data handled, boundaries, owners, and security requirements.</td></tr>
+<tr><td>Acquisition/procurement process</td><td>Evaluate suppliers, support, provenance, security features, licensing, and lifecycle costs before purchase.</td></tr>
+<tr><td>Assignment/accounting</td><td>Record who has an asset, its owner, location, and authorized purpose. Distinguish software licenses from installed copies and data ownership from device custody.</td></tr>
+<tr><td>Monitoring/asset tracking</td><td>Maintain current inventory and detect changes, missing devices, unsupported software, and unauthorized use.</td></tr>
+<tr><td>Disposal/decommissioning</td><td>Remove access and connections, recover licenses, sanitize data according to media and policy, update inventory, and retain required evidence of disposal.</td></tr>
+</tbody></table></div>
+<p><strong>Example:</strong> Retiring a laptop also requires revoking associated access, addressing stored data, checking encryption keys and backups, and recording disposition. Deleting ordinary files may leave recoverable data.</p>
+<h3 id="43-given-a-scenario-perform-tasks-associated-with-vulnerability-management">4.3 Given a scenario, perform tasks associated with vulnerability management</h3>
+<h4 id="identification-methods">Identification methods</h4>
+<div class="table-wrap"><table><thead><tr><th>Method</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Scanning</td><td>Automated discovery and checks for weaknesses. Authenticated scans can inspect local state; unauthenticated scans show more of an external view. Validate scope and operational safety.</td></tr>
+<tr><td>Internet Protocol Address Management (IPAM)</td><td>Maintain address allocation and related inventory to help locate assets and identify unknown or inconsistent use. It supports discovery but does not replace vulnerability scanning.</td></tr>
+<tr><td>Cloud security posture management (CSPM)</td><td>Identify cloud configuration risks, policy violations, and exposure across cloud resources.</td></tr>
+<tr><td>Source code review</td><td>Inspect code for design and implementation weaknesses, manually and with tools. It can reveal flaws before deployment.</td></tr>
+</tbody></table></div>
+<h4 id="prioritization-remediation-and-verification">Prioritization, remediation, and verification</h4>
+<p><strong>Severity assessment</strong> evaluates technical seriousness plus exposure, business impact, and exploitation evidence. <strong>Penetration test report review</strong> identifies demonstrated attack paths, combined weaknesses, and affected assets. <strong>Remediation</strong> may patch, reconfigure, replace, remove, restrict access, or fix code. <strong>Verification</strong> confirms the flaw is resolved through rescanning, inspection, or targeted retesting and checks for side effects.</p>
+<h4 id="reporting">Reporting</h4>
+<p><strong>Internal reporting</strong> communicates ownership, risk, deadlines, exceptions, and status to relevant teams. <strong>External reporting</strong> follows approved disclosure paths. A <strong>bounty program</strong> authorizes specified research and potentially rewards qualifying findings. <strong>Responsible disclosure policies</strong> define how to report and coordinate remediation; respect scope, preserve necessary evidence, and avoid unnecessary exposure of sensitive data.</p>
+<p><strong>Scenario:</strong> An internet-facing flaw with active exploitation deserves urgent attention. If a patch is not immediately possible, apply an appropriate temporary restriction, record the residual risk and owner, schedule the fix, and verify both measures.</p>
+<h3 id="44-explain-security-alerting-and-monitoring-concepts-and-tools">4.4 Explain security alerting and monitoring concepts and tools</h3>
+<h4 id="monitoring-computing-resources">Monitoring computing resources</h4>
+<p><strong>Systems:</strong> Watch hosts, resource use, configuration, and processes. <strong>Applications:</strong> Watch authentication, requests, errors, transactions, and dependencies. <strong>Infrastructure:</strong> Watch network, cloud, storage, identity, and management components. Establish a baseline so deviation has context.</p>
+<h4 id="activities">Activities</h4>
+<div class="table-wrap"><table><thead><tr><th>Activity</th><th>Purpose and example</th></tr></thead><tbody>
+<tr><td>Log aggregation</td><td>Collect logs into a searchable location; synchronize time and preserve source identity.</td></tr>
+<tr><td>Alerting</td><td>Notify on conditions requiring attention, with severity and enough context to act.</td></tr>
+<tr><td>Scanning</td><td>Inspect assets for exposure or vulnerabilities on an approved schedule.</td></tr>
+<tr><td>Archiving</td><td>Preserve older records with controlled access, retention, and retrievability.</td></tr>
+<tr><td>Reporting</td><td>Summarize findings and trends for technical or managerial audiences.</td></tr>
+<tr><td>Alert tuning</td><td>Adjust thresholds, rules, suppression, and context to reduce noise without hiding real threats. Investigate why an alert fires before suppressing it.</td></tr>
+</tbody></table></div>
+<h4 id="tools">Tools</h4>
+<div class="table-wrap"><table><thead><tr><th>Tool/concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Benchmarks</td><td>Reference configurations or expected security states used for comparison.</td></tr>
+<tr><td>Agents/agentless</td><td>Agents provide local collection/control; agentless methods use remote interfaces or network visibility. Compare coverage, permissions, maintenance, and off-network visibility.</td></tr>
+<tr><td>Security information and event management (SIEM)</td><td>Centralizes and correlates security data for detection, search, reporting, and investigation. Useful results depend on complete, well-parsed data and tuned rules.</td></tr>
+<tr><td>Antivirus</td><td>Malware detection telemetry can support monitoring and response.</td></tr>
+<tr><td>DLP</td><td>Alerts on possible unauthorized sensitive-data handling; investigate context before declaring a leak.</td></tr>
+<tr><td>Vulnerability scanners</td><td>Identify known flaws and configuration concerns, with validation of results.</td></tr>
+<tr><td>Orchestration</td><td>Coordinates tools and actions into a workflow, such as enriching an alert and opening a case.</td></tr>
+<tr><td>Packet analyzer</td><td>Inspects captured traffic contents and protocol behavior where visible. Encrypted payloads may remain opaque.</td></tr>
+</tbody></table></div>
+<h4 id="protocols-and-supporting-capabilities">Protocols and supporting capabilities</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and distinction</th></tr></thead><tbody>
+<tr><td>NetFlow</td><td>Summarizes network conversations, such as endpoints, ports, duration, and byte counts. Usually not full packet content.</td></tr>
+<tr><td>Simple Network Management Protocol (SNMP)</td><td>Retrieves/manages device information and sends notifications. Prefer authenticated and encrypted versions/configuration where supported.</td></tr>
+<tr><td>syslog</td><td>A standard approach to transporting event messages. Protect transport and collectors; plaintext unauthenticated delivery can expose or distort logs.</td></tr>
+<tr><td>Security Content Automation Protocol (SCAP)</td><td>A suite of specifications supporting machine-readable security configuration and vulnerability information.</td></tr>
+<tr><td>Automated alerts</td><td>Rule- or analytics-generated notifications. Include ownership and escalation so alerts are actually handled.</td></tr>
+<tr><td>Port mirroring</td><td>Copy switch traffic to an observation port for monitoring. Ensure capture capacity and protect the copied data.</td></tr>
+<tr><td>Dashboards</td><td>Visual summaries of status/trends. They depend on underlying data and can hide detail or collection gaps.</td></tr>
+<tr><td>Network management systems</td><td>Monitor device health, availability, configuration, and performance; distinguish operational faults from security events through correlation.</td></tr>
+</tbody></table></div>
+<p><strong>Exam distinction:</strong> Flow data explains who talked to whom and how much; packet captures may explain what was exchanged; host logs may reveal which process initiated it.</p>
+<h3 id="45-given-a-scenario-apply-concepts-related-to-identity-and-access-management">4.5 Given a scenario, apply concepts related to identity and access management</h3>
+<h4 id="account-life-cycle-and-identity">Account life cycle and identity</h4>
+<p><strong>Provisioning/deprovisioning</strong> creates, changes, and removes accounts/access when people join, move roles, or leave. <strong>Permissions assignments and implications</strong> require correct role, scope, inheritance, and separation of duties. <strong>Identity proofing</strong> establishes a claimed real-world identity before credential issuance; it differs from later authentication. <strong>Federation</strong> lets one identity domain rely on assertions from another.</p>
+<h4 id="single-sign-on">Single sign-on</h4>
+<p><strong>Single sign-on (SSO)</strong> lets a user access multiple applications through an established authentication session. It improves usability but concentrates dependence on identity services and session security.</p>
+<div class="table-wrap"><table><thead><tr><th>Technology</th><th>Main role and example</th></tr></thead><tbody>
+<tr><td>Security Assertion Markup Language (SAML)</td><td>Exchanges signed identity/authentication assertions between an identity provider and a service provider, commonly for enterprise browser sign-in. The PDF says “Assertions”; standard usage is singular “Assertion.”</td></tr>
+<tr><td>Lightweight Directory Access Protocol (LDAP)</td><td>Accesses directory entries such as users/groups; deployments may use it during authentication. It is not interchangeable with browser federation. Secure its transport and permissions.</td></tr>
+<tr><td>Open Authorization (OAuth)</td><td>A delegated authorization framework. An application receives limited access without receiving the user&#x27;s password. OAuth alone is not a complete authentication protocol.</td></tr>
+</tbody></table></div>
+<h4 id="account-types">Account types</h4>
+<div class="table-wrap"><table><thead><tr><th>Account</th><th>Appropriate purpose and safeguards</th></tr></thead><tbody>
+<tr><td>User</td><td>Ordinary personal work; avoid routine administrative privileges.</td></tr>
+<tr><td>Privileged — global</td><td>Broad administrative scope across an environment; strongly restrict, monitor, and separate from daily accounts.</td></tr>
+<tr><td>Privileged — local</td><td>Administrative rights limited to one system; use unique managed credentials to limit lateral movement.</td></tr>
+<tr><td>Service</td><td>Non-human identity for application/service tasks; minimize privileges and manage secrets/lifecycle.</td></tr>
+<tr><td>Third-party</td><td>Vendor/partner access with named ownership, limited scope, expiration, and review.</td></tr>
+<tr><td>Emergency access</td><td>Break-glass access for failure of ordinary access paths; protect, monitor, test, and review its use.</td></tr>
+</tbody></table></div>
+<h4 id="multifactor-authentication-methods">Multifactor authentication methods</h4>
+<p><strong>Hard token:</strong> Physical authenticator, such as a security key or code generator. <strong>Soft token:</strong> Software authenticator on a device. <strong>Biometrics:</strong> Inherence-based traits, often used to unlock a device-bound authenticator; assess spoofing and fallback. <strong>One-time password (OTP):</strong> A code valid for one use or a limited interval; codes can be phished. <strong>Backup code:</strong> Recovery secret stored securely and invalidated when used. Recovery paths must not undermine the primary method.</p>
+<h4 id="access-control-models">Access control models</h4>
+<div class="table-wrap"><table><thead><tr><th>Model</th><th>Decision basis and example</th></tr></thead><tbody>
+<tr><td>Rule-based</td><td>Rules evaluate conditions, such as denying access outside approved network ranges.</td></tr>
+<tr><td>Role-based</td><td>Permissions follow job roles, such as payroll clerk versus payroll approver.</td></tr>
+<tr><td>Time-based</td><td>Access depends on time, such as business hours or a temporary window.</td></tr>
+<tr><td>Mandatory</td><td>Centrally enforced labels/clearances control access; ordinary owners cannot freely override policy.</td></tr>
+<tr><td>Discretionary</td><td>Resource owners can grant access within permitted rules, such as file sharing permissions.</td></tr>
+<tr><td>Just-in-time</td><td>Provide elevated access only when approved and needed, then remove it automatically.</td></tr>
+</tbody></table></div>
+<h4 id="access-management-and-review">Access management and review</h4>
+<p><strong>Authentication</strong> validates the presented identity through approved authenticators. <strong>Logical/technical policies</strong> enforce conditions in systems. <strong>Administrative/business policies</strong> define who should receive access, approval requirements, and conduct. <strong>Access review</strong> verifies rights remain appropriate and removes unnecessary permissions; compare actual access with current responsibilities rather than simply confirming that accounts exist.</p>
+<h4 id="password-concepts">Password concepts</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and practical implication</th></tr></thead><tbody>
+<tr><td>Passkey</td><td>Public-key credential bound to a service, often unlocked with a device biometric or local secret. The server does not store a reusable shared password for that credential. Protect synchronization and recovery paths.</td></tr>
+<tr><td>Password managers</td><td>Generate/store unique credentials and reduce reuse. Protect the vault and recovery process.</td></tr>
+<tr><td>Passwordless</td><td>Authenticate without a traditional reusable password, for example with a passkey. It can still require local user verification.</td></tr>
+<tr><td>Length</td><td>Longer unpredictable passwords/passphrases resist guessing better than short predictable ones.</td></tr>
+<tr><td>Complexity</td><td>Character-mix rules do not automatically produce unpredictable passwords; predictable substitutions provide limited benefit.</td></tr>
+<tr><td>Reuse</td><td>One breach can expose multiple accounts when passwords are reused. Use unique credentials.</td></tr>
+<tr><td>Expiration</td><td>A rule requiring replacement after a period. Understand the scenario&#x27;s policy; current guidance generally avoids routine forced changes absent compromise.</td></tr>
+<tr><td>Age</td><td>Minimum age can prevent rapid changes used to defeat history rules; maximum age sets expiration. These are policy settings, not proof of security.</td></tr>
+<tr><td>Compromised credential monitoring</td><td>Detect known-exposed passwords or suspicious credential use and trigger appropriate resets/revocation.</td></tr>
+<tr><td>Account auditing</td><td>Review account state, privileges, inactivity, owner, and suspicious usage.</td></tr>
+<tr><td>Policy report</td><td>Summarize actual compliance and exceptions, such as accounts exempt from required controls.</td></tr>
+</tbody></table></div>
+<p>The <a href="https://pages.nist.gov/800-63-4/sp800-63b.html">National Institute of Standards and Technology (NIST) digital identity guidance</a> emphasizes blocking known-compromised/common passwords and does not require routine periodic password changes. Distinguish contemporary guidance from a scenario&#x27;s expressly stated organizational requirements.</p>
+<h3 id="46-given-a-scenario-apply-automation-and-orchestration-solutions-to-secure-operations">4.6 Given a scenario, apply automation and orchestration solutions to secure operations</h3>
+<p><strong>Automation</strong> executes a task using predefined logic; <strong>orchestration</strong> coordinates multiple tasks and systems. <strong>Scripting</strong> expresses repeatable actions in code. All inherit the permissions and errors of their design.</p>
+<h4 id="use-cases">Use cases</h4>
+<div class="table-wrap"><table><thead><tr><th>Use case</th><th>Example and safeguard</th></tr></thead><tbody>
+<tr><td>User provisioning</td><td>Create access from approved role information; verify ownership and remove access when roles change.</td></tr>
+<tr><td>Resource provisioning</td><td>Deploy systems from approved templates; enforce tags, configuration, and scoped identities.</td></tr>
+<tr><td>Desired state management</td><td>Detect/correct drift from an approved configuration. Avoid repeatedly overwriting justified emergency changes without review.</td></tr>
+<tr><td>Anomaly detection</td><td>Flag behavior deviating from a baseline; account for legitimate seasonal or workload changes.</td></tr>
+<tr><td>Ticket management</td><td>Create, enrich, assign, and track cases automatically; prevent duplication and preserve evidence.</td></tr>
+</tbody></table></div>
+<h4 id="considerations">Considerations</h4>
+<p><strong>Guardrails:</strong> Bound permissions, action scope, rates, and approvals. <strong>Automation logic:</strong> Test conditions, error handling, retries, and idempotency (safe repeated execution). <strong>Process engineering:</strong> Understand and improve a workflow before automating it. <strong>Complexity:</strong> More dependencies create more failure paths. <strong>Financial:</strong> Compare build, licensing, maintenance, and failure costs against benefits. <strong>Process risks:</strong> Bad logic can spread a mistake rapidly. <strong>Deployment:</strong> Pilot, monitor, version, and provide rollback or a safe stop.</p>
+<h4 id="artificial-intelligence-capabilities">Artificial intelligence capabilities</h4>
+<div class="table-wrap"><table><thead><tr><th>Capability</th><th>Definition and application</th></tr></thead><tbody>
+<tr><td>Agentic</td><td>Pursues an objective through tool use and multiple steps. Constrain authority and require suitable checks before consequential actions.</td></tr>
+<tr><td>Chatbot</td><td>Conversational assistance, such as explaining alerts. Validate answers against evidence.</td></tr>
+<tr><td>Predictive analysis</td><td>Estimate future events from patterns, such as likely capacity exhaustion. Uncertainty and changing conditions matter.</td></tr>
+<tr><td>AI-augmented baselines</td><td>Learn expected behavior from data and highlight deviations. Poor or poisoned baseline data can conceal attacks or increase noise.</td></tr>
+</tbody></table></div>
+<h4 id="intended-outcomes-security-operations-and-workflows">Intended outcomes, security operations, and workflows</h4>
+<p><strong>Efficiency/time saving</strong> reduces repetitive effort. <strong>Enforcing baselines</strong> makes configuration consistent. <strong>Continuous improvements</strong> use feedback to refine processes. <strong>Productivity improvements</strong> let analysts handle higher-value work. <strong>Reduced downtime</strong> comes from faster safe response. <strong>Increased proactivity</strong> identifies issues before they become incidents. Measure these outcomes rather than assuming automation delivers them.</p>
+<p><strong>Security operations (SecOps)</strong> combines security and operational activities. <strong>Continuous integration and continuous deployment (CI/CD)</strong> automates building, testing, and delivery; protect repositories, dependencies, secrets, and pipeline identities. <strong>Workflows</strong> connect triggers, decisions, actions, and results. <strong>Integrations</strong> connect systems through authorized interfaces with limited credentials, validation, and logging.</p>
+<p><strong>Example:</strong> A suspicious sign-in triggers enrichment, a ticket, and analyst review. Automatic account disabling should have confidence thresholds and safeguards because a false positive can disrupt critical operations.</p>
+<h3 id="47-summarize-concepts-associated-with-incident-response-activities">4.7 Summarize concepts associated with incident response activities</h3>
+<p>Incident response is coordinated handling of security events to reduce harm, preserve evidence, restore services, and improve defenses. Stages may overlap and repeat.</p>
+<h4 id="preparation">Preparation</h4>
+<p><strong>Training</strong> builds required skills. <strong>Testing</strong> confirms plans and capabilities. <strong>Tabletop exercises</strong> discuss a scenario and decisions without executing a full technical response. <strong>Playbooks</strong> specify actions for particular incident types. <strong>Simulation</strong> rehearses behavior in realistic controlled conditions. <strong>Roles</strong> assign decision authority, technical tasks, evidence custody, and communication responsibility.</p>
+<h4 id="identification">Identification</h4>
+<p><strong>Detection</strong> recognizes potential incidents from telemetry/reports. <strong>Internal advisory</strong> warns relevant staff about observed threats or necessary actions. <strong>External advisory</strong> provides information from vendors, public bodies, or partners. <strong>Threat hunting</strong> proactively searches for adversary behavior not already identified by alerts. Validate scope and severity before choosing response steps.</p>
+<h4 id="investigation">Investigation</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Meaning and practice</th></tr></thead><tbody>
+<tr><td>Digital forensics</td><td>Collect and analyze digital evidence using defensible methods to reconstruct events.</td></tr>
+<tr><td>Chain of custody</td><td>Document evidence identity, collection, transfers, possession, and handling. A hash supports integrity but does not replace custody records.</td></tr>
+<tr><td>E-discovery</td><td>Identify, preserve, collect, review, and produce electronically stored information for legal processes. Coordinate with legal staff.</td></tr>
+<tr><td>Preservation</td><td>Protect evidence against alteration or loss. Capture volatile data when appropriate, use validated methods, and document actions.</td></tr>
+</tbody></table></div>
+<h4 id="containment-negotiation-eradication-and-recovery">Containment, negotiation, eradication, and recovery</h4>
+<p><strong>Quarantine/isolation</strong> limits spread while retaining a controlled environment for investigation; choose host, account, network, or application restrictions based on the incident. Powering off can destroy volatile evidence, while leaving a system connected can permit harm; follow the response plan and assess urgency.</p>
+<p><strong>Negotiation</strong> may arise in extortion or crisis handling. It requires designated authority and coordinated legal/business decisions; it is not an ordinary analyst&#x27;s unilateral action.</p>
+<p><strong>Eradication</strong> removes malware, persistence, exploited weaknesses, and attacker access. <strong>Recovery</strong> restores trusted service, validates integrity, and monitors for recurrence. Restoring a backup without fixing the entry point risks reinfection.</p>
+<h4 id="notificationexternal-reporting">Notification/external reporting</h4>
+<p><strong>Stakeholders</strong> need timely relevant status and decisions. <strong>Customers</strong> may need protective actions or incident information. <strong>Law enforcement</strong> engagement depends on incident and organizational process. <strong>Mandatory reporting</strong> follows applicable legal, contractual, or regulatory requirements and deadlines; coordinate content and timing with authorized staff.</p>
+<h4 id="post-incident">Post-incident</h4>
+<p><strong>Lessons learned</strong> identify what worked and what should improve. <strong>Root cause analysis</strong> investigates why the event happened and why controls failed. <strong>Post-incident reporting (PIR)</strong> records timeline, scope, impact, response, recovery, and assigned improvements. Avoid ending with “user clicked a link” when systemic safeguards also failed.</p>
+<h3 id="48-given-a-scenario-use-data-artifacts-and-sources-to-support-a-security-investigation">4.8 Given a scenario, use data, artifacts and sources to support a security investigation</h3>
+<h4 id="log-and-trace-data-types">Log and trace data types</h4>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Evidence it may provide</th></tr></thead><tbody>
+<tr><td>Access and accounting — logical</td><td>Resource access, actions, and session usage attributed to an identity.</td></tr>
+<tr><td>Access and accounting — physical</td><td>Badge entry, visitor records, and door events. Correlate with logical activity.</td></tr>
+<tr><td>Device</td><td>Router, firewall, appliance, or hardware events and configuration changes.</td></tr>
+<tr><td>Server</td><td>Service starts/stops, system errors, administrative actions, and host events.</td></tr>
+<tr><td>Application</td><td>Requests, transactions, errors, and application-specific actions.</td></tr>
+<tr><td>Authentication</td><td>Successful/failed sign-ins, factor checks, identity changes, and source context.</td></tr>
+<tr><td>Communication</td><td>Message headers, delivery paths, connection events, and communication timing.</td></tr>
+<tr><td>Audit</td><td>Security-relevant actions, permission changes, and administrative operations.</td></tr>
+<tr><td>Endpoint</td><td>Processes, file activity, device connections, and local detections.</td></tr>
+<tr><td>Network</td><td>Connections, traffic volumes, blocked requests, and routing events.</td></tr>
+<tr><td>Metadata</td><td>Context such as sender, recipient, timestamps, sizes, paths, and identifiers; can be informative even when content is encrypted.</td></tr>
+</tbody></table></div>
+<h4 id="data-sources">Data sources</h4>
+<div class="table-wrap"><table><thead><tr><th>Source</th><th>Use and limitation</th></tr></thead><tbody>
+<tr><td>Vulnerability scans</td><td>Show possible entry weaknesses and affected systems, but not necessarily actual exploitation.</td></tr>
+<tr><td>Automated reports</td><td>Summarize detections and compliance; verify against underlying records.</td></tr>
+<tr><td>NetFlow / Internet Protocol Flow Information Export (IPFIX)</td><td>Analyze communication patterns and volumes; generally not full payload contents.</td></tr>
+<tr><td>Surveillance footage</td><td>Corroborate physical activity and timing; consider coverage and clock offsets.</td></tr>
+<tr><td>Security tools</td><td>Provide alerts, endpoint telemetry, configuration, and response histories.</td></tr>
+<tr><td>Dashboards</td><td>Identify trends and affected areas; drill down to raw evidence.</td></tr>
+<tr><td>Packet captures</td><td>Preserve observable network exchanges; encryption and capture location limit content visibility.</td></tr>
+</tbody></table></div>
+<h4 id="integrity-and-system-images">Integrity and system images</h4>
+<p><strong>File/log integrity:</strong> Compare trustworthy cryptographic hashes, protect originals, record handling, and use controlled copies for analysis. Logs can be missing or attacker-modified; corroborate independent sources.</p>
+<div class="table-wrap"><table><thead><tr><th>Artifact</th><th>Definition and distinction</th></tr></thead><tbody>
+<tr><td>Memory dump</td><td>Capture of memory contents; may include running processes, keys, sessions, and volatile artifacts absent from disk.</td></tr>
+<tr><td>Bit-level copy</td><td>Sector/bit-oriented forensic image that can include unallocated space and deleted-data remnants, depending on acquisition method and medium.</td></tr>
+<tr><td>Snapshot</td><td>Point-in-time system/storage state, often useful for recovery. It may omit memory or unallocated data and is not automatically a complete forensic image.</td></tr>
+</tbody></table></div>
+<h4 id="stakeholders-and-log-parsing">Stakeholders and log parsing</h4>
+<p><strong>Human Resources (HR)</strong> coordinates employment-related matters. <strong>Accounts</strong> may refer to finance/accounting or account administration; the PDF does not clarify. Engage the team relevant to the incident, such as finance for payment fraud. <strong>Legal</strong> advises on preservation, privacy, disclosure, and legal process.</p>
+<p><strong>Log-parsing techniques:</strong> Extract fields, normalize formats, filter events, search patterns, correlate identifiers, deduplicate, and construct timelines. Preserve original logs; record time-zone conversions and clock offsets. A structured parser is more reliable than a text search for complex or multiline records.</p>
+<p><strong>Scenario:</strong> A suspicious download investigation can combine identity logs, endpoint process data, file hashes, flow data, application audit events, and badge records. Distinguish observed facts, reasonable inferences, and unresolved gaps.</p>
+<h2 id="50-security-program-management-and-oversight--14">5.0 Security Program Management and Oversight — 14%</h2>
+<h3 id="51-explain-the-importance-of-governance-risk-and-compliance-artifacts">5.1 Explain the importance of governance, risk, and compliance artifacts</h3>
+<p><strong>Governance</strong> establishes direction, accountability, and oversight. <strong>Risk management</strong> identifies and handles uncertainty and potential harm. <strong>Compliance</strong> demonstrates fulfillment of applicable requirements. Documents make responsibilities and expected practices explicit.</p>
+<h4 id="guidelines">Guidelines</h4>
+<p>Guidelines recommend approaches and usually permit discretion unless adopted as mandatory requirements.</p>
+<div class="table-wrap"><table><thead><tr><th>Artifact</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Benchmarks</td><td>Reference settings or measures to evaluate posture; an approved secure server configuration.</td></tr>
+<tr><td>Advisories</td><td>Notices about threats, vulnerabilities, or recommended action; a vendor&#x27;s urgent patch announcement.</td></tr>
+<tr><td>Implementation guides</td><td>Instructions for applying a technology, standard, or control in practice.</td></tr>
+<tr><td>Reference architecture</td><td>A reusable model showing components, connections, and control placement. Adapt it to actual requirements.</td></tr>
+</tbody></table></div>
+<h4 id="standards">Standards</h4>
+<p>Standards specify required details that implement policies.</p>
+<div class="table-wrap"><table><thead><tr><th>Artifact/topic</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Baselines</td><td>Minimum approved configuration or control state; logging enabled and unnecessary services disabled.</td></tr>
+<tr><td>Passwords</td><td>Required credential controls, such as uniqueness and handling of compromised passwords.</td></tr>
+<tr><td>Physical security</td><td>Required facility protections, such as visitor escorting and restricted server-room entry.</td></tr>
+<tr><td>Request for Comments (RFC)</td><td>A publication series for internet specifications and related material. Some RFCs are standards; others are informational or experimental. Consult the relevant status and adopted requirements.</td></tr>
+<tr><td>Encryption</td><td>Required protection, approved algorithms/protocols, key management, and exceptions.</td></tr>
+</tbody></table></div>
+<h4 id="procedures-and-plans">Procedures and plans</h4>
+<p><strong>Standard operating procedure (SOP):</strong> Approved repeatable steps for an operational task. <strong>Runbook:</strong> Detailed execution instructions for a particular task or condition, often including commands, decision points, and escalation. <strong>Business continuity plan:</strong> How essential business functions continue during disruption. <strong>Disaster recovery plan:</strong> How technology and dependencies are restored. Plans define coordinated action; procedures explain specific execution.</p>
+<h4 id="policies">Policies</h4>
+<div class="table-wrap"><table><thead><tr><th>Policy</th><th>What it governs</th></tr></thead><tbody>
+<tr><td>Bring your own device (BYOD)</td><td>Use of personally owned devices, enrollment, access, security, privacy, and removal of business data.</td></tr>
+<tr><td>Acceptable use policy (AUP)</td><td>Permitted/prohibited use of organizational systems and resources.</td></tr>
+<tr><td>Clean desk</td><td>Securing unattended sensitive papers, media, and screens.</td></tr>
+<tr><td>Information security</td><td>Organization-wide security expectations, responsibilities, and oversight.</td></tr>
+<tr><td>Incident response</td><td>Reporting, authority, escalation, and coordinated handling of incidents.</td></tr>
+<tr><td>Data classification and retention</td><td>Sensitivity labels, handling requirements, retention periods, and exceptions/holds.</td></tr>
+<tr><td>Access control</td><td>Eligibility, approval, least privilege, review, and removal of access.</td></tr>
+<tr><td>Data disposal</td><td>Authorized sanitization/destruction and verification requirements.</td></tr>
+<tr><td>Vulnerability disclosure</td><td>Channels, scope, researcher expectations, and coordination for reported weaknesses.</td></tr>
+<tr><td>Privacy</td><td>Appropriate personal-data collection, processing, access, sharing, and retention.</td></tr>
+</tbody></table></div>
+<p><strong>Exam distinction:</strong> Policy says what/why; standard specifies mandatory details; procedure says how; guideline recommends. An organization can adopt a guideline as a mandatory standard.</p>
+<h3 id="52-explain-the-impact-of-risk-management-processes-on-the-security-of-the-organization">5.2 Explain the impact of risk management processes on the security of the organization</h3>
+<h4 id="risk-identification-and-assessment">Risk identification and assessment</h4>
+<p><strong>Asset identification</strong> records valuable systems, data, people, processes, and dependencies. <strong>Stakeholder ownership</strong> assigns accountable business owners. <strong>Scoring</strong> uses an agreed method to compare risks. <strong>Categorization</strong> groups risks, such as operational, security, financial, and compliance, so appropriate owners can respond.</p>
+<h4 id="risk-analysis">Risk analysis</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Meaning and application</th></tr></thead><tbody>
+<tr><td>Impact</td><td>Magnitude of harm if the event occurs; consider confidentiality, integrity, availability, safety, and business consequences.</td></tr>
+<tr><td>Likelihood/probability</td><td>Chance of occurrence over a stated period, informed by exposure and threat conditions.</td></tr>
+<tr><td>Owner</td><td>Person accountable for treatment decisions, review, and escalation.</td></tr>
+<tr><td>Current mitigations</td><td>Existing controls that change likelihood or impact; validate their effectiveness.</td></tr>
+<tr><td>Qualitative</td><td>Uses descriptive categories such as low/medium/high; practical when precise data is unavailable.</td></tr>
+<tr><td>Quantitative</td><td>Uses numeric estimates, often monetary loss and frequency; useful but depends on assumptions and data quality.</td></tr>
+</tbody></table></div>
+<h4 id="risk-register">Risk register</h4>
+<p>A <strong>risk register</strong> records risks, assets, causes, likelihood, impact, controls, owners, treatment, deadlines, and status. <strong>Communication</strong> makes decisions and obligations visible to the right stakeholders. <strong>Reviews</strong> update the register when threats, systems, controls, or business priorities change. A forgotten register does not manage risk.</p>
+<h4 id="risk-treatment">Risk treatment</h4>
+<div class="table-wrap"><table><thead><tr><th>Treatment</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Transferring</td><td>Shift some financial/contractual consequences through insurance or agreements. Responsibility and residual exposure do not necessarily disappear.</td></tr>
+<tr><td>Accepting</td><td>Authorized decision to retain a known risk, with rationale, owner, and review conditions. Ignoring a problem is not documented acceptance.</td></tr>
+<tr><td>Avoiding</td><td>Stop the activity creating the risk, such as retiring an unnecessary exposed service.</td></tr>
+<tr><td>Mitigating</td><td>Reduce likelihood or impact through controls, such as segmentation and stronger authentication.</td></tr>
+</tbody></table></div>
+<h4 id="business-level-considerations">Business-level considerations</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Business impact analysis</td><td>Determine critical processes, dependencies, and consequences of disruption to set recovery priorities.</td></tr>
+<tr><td>Risk appetite</td><td>Amount/type of risk leadership is willing to pursue or retain in achieving objectives.</td></tr>
+<tr><td>Residual risk</td><td>Risk remaining after controls/treatment. It must still be owned and reviewed.</td></tr>
+<tr><td>Stakeholder involvement</td><td>Include business, technical, security, finance, and other relevant perspectives.</td></tr>
+<tr><td>Management oversight</td><td>Leadership approves priorities, resources, and risk decisions at appropriate authority levels.</td></tr>
+<tr><td>Regulatory</td><td>Applicable oversight requirements can constrain available treatments.</td></tr>
+<tr><td>Legal</td><td>Law, liability, contracts, and obligations affect acceptable decisions and evidence needs.</td></tr>
+<tr><td>Single loss expectancy (SLE)</td><td>Estimated loss from one occurrence. Common calculation: asset value × exposure factor (fraction lost).</td></tr>
+<tr><td>Annualized rate of occurrence (ARO)</td><td>Estimated frequency per year. One event every four years corresponds to 0.25 per year.</td></tr>
+<tr><td>Annualized loss expectancy (ALE)</td><td>Estimated annual loss: SLE × ARO. It is an estimate, not a guaranteed yearly bill.</td></tr>
+</tbody></table></div>
+<p><strong>Worked example:</strong> A $200,000 asset has an estimated 25% loss per incident. SLE = $200,000 × 0.25 = $50,000. With ARO = 0.4, ALE = $20,000. A control costing $6,000 annually that reduces ARO to 0.1 yields a new ALE of $5,000, or $15,000 estimated loss reduction before considering uncertainty and other effects.</p>
+<h3 id="53-explain-the-assessment-and-management-processes-associated-with-third-party-risk">5.3 Explain the assessment and management processes associated with third-party risk</h3>
+<p>Third-party risk extends to suppliers, service providers, subcontractors, and dependencies. Outsourcing a service does not eliminate the organization&#x27;s accountability.</p>
+<h4 id="vendor-selection">Vendor selection</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Request for proposal (RFP)</td><td>Ask vendors to propose a solution, approach, and terms for defined needs.</td></tr>
+<tr><td>Request for information (RFI)</td><td>Gather market/capability information before deciding detailed requirements.</td></tr>
+<tr><td>Request for quote (RFQ)</td><td>Ask for pricing on a relatively well-specified purchase.</td></tr>
+<tr><td>Expression of interest (EOI)</td><td>Invite or submit preliminary interest/capability for an opportunity.</td></tr>
+<tr><td>Due diligence</td><td>Investigate security, finances, reliability, data handling, subcontractors, and support before selection and throughout the relationship.</td></tr>
+<tr><td>Conflict of interest</td><td>Personal or business interests could improperly influence judgment. Disclose and manage them to protect objective selection.</td></tr>
+</tbody></table></div>
+<h4 id="agreement-types">Agreement types</h4>
+<div class="table-wrap"><table><thead><tr><th>Agreement</th><th>Definition and distinction</th></tr></thead><tbody>
+<tr><td>Service-level agreement (SLA)</td><td>Agreement defining service commitments, measurement, responsibilities, and often consequences for failure.</td></tr>
+<tr><td>Service-level objective (SLO)</td><td>Specific measurable target, such as an availability goal; may support an SLA.</td></tr>
+<tr><td>Memorandum of understanding (MOU)</td><td>Documents shared intent or understanding. Enforceability depends on wording and applicable law.</td></tr>
+<tr><td>Memorandum of agreement (MOA)</td><td>Documents agreed responsibilities/commitments, often more specific than an MOU; do not assume legal effect from its title alone.</td></tr>
+<tr><td>Non-disclosure agreement (NDA)</td><td>Governs confidential information use and disclosure.</td></tr>
+<tr><td>Master services agreement (MSA)</td><td>Establishes general terms for an ongoing service relationship. The acronym list says “Master Service Agreement”; the objective uses plural “services.”</td></tr>
+<tr><td>Statement of work (SOW)</td><td>Defines a particular project&#x27;s scope, deliverables, tasks, and acceptance conditions.</td></tr>
+</tbody></table></div>
+<h4 id="vendor-monitoring">Vendor monitoring</h4>
+<p><strong>Right to audit</strong> establishes permitted verification of controls. <strong>Service-level monitoring</strong> compares performance with commitments. <strong>Vendor registry</strong> tracks suppliers, owners, access, data, contracts, and criticality. <strong>Vendor assessment</strong> evaluates changing risk and control effectiveness. <strong>Compliance attestation</strong> is a statement/evidence of compliance within a specified scope and period; inspect limitations. <strong>Penetration testing</strong> demonstrates exploitable paths within authorized scope and should be reviewed alongside remediation evidence.</p>
+<h4 id="limitationsconstraints-and-rules-of-engagement">Limitations/constraints and rules of engagement</h4>
+<div class="table-wrap"><table><thead><tr><th>Constraint</th><th>Security implication</th></tr></thead><tbody>
+<tr><td>Staffing limitations</td><td>Limited expertise/time may restrict review or monitoring depth. Prioritize critical vendors.</td></tr>
+<tr><td>Resource availability</td><td>Tools, budget, data, or access may limit assessment. Record assurance gaps.</td></tr>
+<tr><td>Environment</td><td>Shared/cloud/production systems may restrict testing or direct visibility.</td></tr>
+<tr><td>Legal and regulatory factors</td><td>Data handling, testing, contracts, and reporting obligations can limit options.</td></tr>
+<tr><td>Geography/jurisdiction</td><td>Location affects access, legal obligations, and recovery logistics.</td></tr>
+<tr><td>Financial / return on investment (ROI)</td><td>Compare value with costs, including security, transition, and exit costs. A common ROI formula is (benefit − cost) ÷ cost.</td></tr>
+<tr><td>Vendor lock-in</td><td>Dependence on proprietary interfaces, formats, or terms makes switching difficult. Plan data export and exit.</td></tr>
+<tr><td>Assurance mechanisms</td><td>Obtain confidence through reports, tests, certifications, contracts, and ongoing evidence. Each has scope/quality limits.</td></tr>
+</tbody></table></div>
+<p><strong>Rules of engagement</strong> define authorized targets, methods, timing, restrictions, communication, evidence handling, and stop conditions for testing. Permission to use a service does not imply permission to attack-test its provider.</p>
+<h3 id="54-summarize-elements-of-effective-security-compliance">5.4 Summarize elements of effective security compliance</h3>
+<h4 id="compliance-training-and-monitoring">Compliance training and monitoring</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Data handling</td><td>Teach applicable classification, access, sharing, retention, and disposal practices.</td></tr>
+<tr><td>Anti-money laundering/counter-terrorism financing (AML/CTF)</td><td>Processes/training to recognize and report suspicious financial activity under applicable obligations.</td></tr>
+<tr><td>Anti-bribery</td><td>Teach prohibited improper inducements, disclosure requirements, and reporting channels.</td></tr>
+<tr><td>Attestations</td><td>Formal statements that requirements are met; support them with verifiable evidence.</td></tr>
+<tr><td>Acknowledgements</td><td>Record that someone received/understood a policy or training. Signing does not prove correct ongoing behavior.</td></tr>
+</tbody></table></div>
+<h4 id="consequences-of-non-compliance">Consequences of non-compliance</h4>
+<p><strong>Reputational damage</strong> reduces trust. <strong>Financial consequences</strong> include fines, remediation, and losses. <strong>Legal consequences</strong> include litigation or other proceedings. <strong>Contractual consequences</strong> include penalties or termination. <strong>Sanctions</strong> can restrict activities or impose other penalties. <strong>Loss of license</strong> can remove permission to operate. Applicability depends on the actual requirement and circumstances.</p>
+<h4 id="privacy">Privacy</h4>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Meaning and practical implication</th></tr></thead><tbody>
+<tr><td>Right to be forgotten</td><td>Under applicable frameworks, a right to request erasure subject to conditions and exceptions. It is not an unconditional right to delete every record immediately.</td></tr>
+<tr><td>Opt-in or opt-out</td><td>Consent/choice mechanisms: opt-in requires affirmative agreement; opt-out permits withdrawal from a default arrangement where allowed.</td></tr>
+<tr><td>Data correction</td><td>Fix inaccurate personal information through an appropriate process.</td></tr>
+<tr><td>Processing restrictions</td><td>Limit how data is processed, possibly retaining it without ordinary use while a dispute is resolved.</td></tr>
+<tr><td>Processing prevention</td><td>Stop prohibited processing; the precise legal mechanism depends on jurisdiction and circumstances.</td></tr>
+<tr><td>Controller vs. processor</td><td>Controller determines purposes/means; processor handles data on the controller&#x27;s behalf. Contracts and duties should reflect actual roles.</td></tr>
+<tr><td>Ownership</td><td>Clarify accountability and rights in data governance. Business “ownership” does not remove individuals&#x27; applicable privacy rights.</td></tr>
+</tbody></table></div>
+<h4 id="legal-compliance">Legal compliance</h4>
+<p><strong>Legal hold</strong> suspends normal disposal for potentially relevant records. <strong>Legal orders</strong> direct preservation, production, restrictions, or other action through applicable legal authority. <strong>Data retention requirements</strong> specify minimum/maximum retention and purpose. Coordinate conflicts between deletion requests and preservation obligations with legal staff; do not assume one label settles the issue.</p>
+<p>For the erasure exception concept, see the <a href="https://www.edpb.europa.eu/sme/be-compliant/respect-individuals-rights_en">European Data Protection Board&#x27;s explanation of the right to erasure</a>. This is a jurisdiction-specific example, not a universal rule for every organization.</p>
+<h3 id="55-explain-concepts-associated-with-audit-and-assessment-activities">5.5 Explain concepts associated with audit and assessment activities</h3>
+<h4 id="data-gathering">Data gathering</h4>
+<div class="table-wrap"><table><thead><tr><th>Method</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Sampling</td><td>Examine a selected subset to draw conclusions about a larger set. Biased or too-small samples can miss failures.</td></tr>
+<tr><td>Questionnaires/surveys</td><td>Structured responses efficiently collect information but may need verification.</td></tr>
+<tr><td>Interviews</td><td>Ask personnel how processes actually work; compare answers with documents and evidence.</td></tr>
+<tr><td>Assertion</td><td>A claim about control state or performance, such as “all privileged accounts use MFA.” Test the claim.</td></tr>
+</tbody></table></div>
+<h4 id="reference-sources">Reference sources</h4>
+<ul>
+<li style="margin-left:0.0em"><strong>MITRE Adversarial Tactics, Techniques, and Common Knowledge (ATT&amp;CK):</strong> A knowledge base of observed adversary behaviors. Tactics explain why an action is taken; techniques describe how. Map detections and gaps to behaviors, not merely product names. MITRE is an organization name, not a current acronym needing expansion. See <a href="https://attack.mitre.org/resources/">MITRE&#x27;s resources</a>.</li>
+<li style="margin-left:0.0em"><strong>Cyber Kill Chain:</strong> A model of reconnaissance, weaponization, delivery, exploitation, installation, command and control, and actions on objectives. It helps identify opportunities to interrupt a campaign. The stages do not perfectly describe every incident. See <a href="https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html">Lockheed Martin&#x27;s model</a>.</li>
+<li style="margin-left:0.0em"><strong>Diamond Model of Intrusion Analysis:</strong> Relates adversary, infrastructure, capability, and victim in an intrusion event. Linking common infrastructure or capabilities can help connect events.</li>
+</ul>
+<h4 id="scoping">Scoping</h4>
+<p><strong>Audit charter</strong> establishes purpose, authority, responsibilities, and independence. <strong>Frequency</strong> sets how often review occurs based on risk, requirements, and change. Scope should identify systems, locations, time periods, requirements, and exclusions; an audit outside a system&#x27;s scope says little about that system.</p>
+<h4 id="engagement-types">Engagement types</h4>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Definition and distinction</th></tr></thead><tbody>
+<tr><td>Gap analysis</td><td>Compare present controls with a desired standard or target state to identify missing elements.</td></tr>
+<tr><td>Internal compliance</td><td>Organization evaluates whether applicable requirements are being followed.</td></tr>
+<tr><td>Audit committee</td><td>Oversight body reviewing audit activity, findings, independence, and follow-up.</td></tr>
+<tr><td>Self-assessments</td><td>Teams assess their own practices; useful but vulnerable to bias or insufficient evidence.</td></tr>
+<tr><td>External examinations</td><td>Formal outside scrutiny of specified conditions or records.</td></tr>
+<tr><td>External assessments</td><td>Outside evaluation of security posture, controls, or risk.</td></tr>
+<tr><td>Regulatory</td><td>Review performed for or by an oversight authority under its mandate.</td></tr>
+<tr><td>Independent third-party audits</td><td>External evaluation intended to provide independent assurance within defined scope.</td></tr>
+<tr><td>Benchmarking</td><td>Compare controls/performance with a reference or peers; context matters.</td></tr>
+</tbody></table></div>
+<h4 id="penetration-testing">Penetration testing</h4>
+<div class="table-wrap"><table><thead><tr><th>Type/concept</th><th>Definition and practical distinction</th></tr></thead><tbody>
+<tr><td>Known environment</td><td>Tester receives substantial environment information and possibly access; enables depth and efficiency.</td></tr>
+<tr><td>Unknown environment</td><td>Tester receives little internal information; approximates an outsider&#x27;s discovery challenge.</td></tr>
+<tr><td>Partially known environment</td><td>Tester receives some information or access; balances realism and depth.</td></tr>
+<tr><td>Physical</td><td>Tests facility entry and physical controls within explicit authorization.</td></tr>
+<tr><td>Offensive</td><td>Simulates adversary actions to find and demonstrate exploitable weaknesses.</td></tr>
+<tr><td>Defensive</td><td>Evaluates defenders&#x27; detection, investigation, and response capabilities.</td></tr>
+<tr><td>Integrated</td><td>Coordinates offensive and defensive activity to improve controls through shared learning.</td></tr>
+<tr><td>Passive reconnaissance</td><td>Gather information without directly interacting with target systems, such as public records.</td></tr>
+<tr><td>Active reconnaissance</td><td>Interact with target systems, such as approved service discovery. It can be detectable and disruptive.</td></tr>
+</tbody></table></div>
+<p>A vulnerability scan identifies possible weaknesses; a penetration test attempts to demonstrate exploitability/impact within authorized limits. Neither guarantees all weaknesses are found.</p>
+<h4 id="frameworks-standards-and-test-focus">Frameworks, standards, and test focus</h4>
+<p><strong>Industry-based standards</strong> reflect sector requirements. <strong>International standards</strong> support cross-border consistency. <strong>Region-specific standards</strong> reflect particular jurisdictional expectations. Choose what applies to the organization&#x27;s activities, scope, and obligations rather than assuming any certification covers everything.</p>
+<p><strong>Functional testing</strong> asks whether a control performs its required function: does an unauthorized request get denied? <strong>Behavioral testing</strong> examines actions under realistic conditions: do staff report suspicious requests and do responders escalate correctly? The PDF does not give narrower definitions; use the scenario&#x27;s context, including software behavior where relevant.</p>
+<h3 id="56-given-a-scenario-apply-security-awareness-concepts-to-improve-organizational-security">5.6 Given a scenario, apply security awareness concepts to improve organizational security</h3>
+<h4 id="types-of-training">Types of training</h4>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Definition and example</th></tr></thead><tbody>
+<tr><td>Initial/onboarding</td><td>Introduce policies, reporting, and safe practices when joining or receiving access.</td></tr>
+<tr><td>Ongoing</td><td>Reinforce and update knowledge over time.</td></tr>
+<tr><td>Targeted</td><td>Tailor to a role or risk, such as payment-fraud training for finance.</td></tr>
+<tr><td>Corrective</td><td>Address an observed error or gap with focused improvement rather than merely blame.</td></tr>
+</tbody></table></div>
+<h4 id="delivery-mechanisms">Delivery mechanisms</h4>
+<p><strong>Learning management system (LMS)</strong> assigns, tracks, and tests training. <strong>Self-service portals</strong> provide accessible guidance when needed. <strong>One-to-one</strong> instruction supports individual coaching or sensitive issues. <strong>One-to-many</strong> reaches groups efficiently through classes, briefings, or webinars. Choose accessible formats and role-relevant examples.</p>
+<h4 id="reporting-and-monitoring-of-effectiveness">Reporting and monitoring of effectiveness</h4>
+<p><strong>Metrics</strong> measure outcomes such as reporting rate, time to report, repeat errors, and appropriate handling. <strong>Managerial reports</strong> summarize trends, gaps, and accountable improvements. <strong>Personnel behavior risk scoring</strong> uses observed patterns to focus assistance; validate data, minimize privacy impact, account for job context, and avoid treating a score as proof of intent. Training completion alone does not demonstrate secure behavior.</p>
+<h4 id="common-training-topics">Common training topics</h4>
+<div class="table-wrap"><table><thead><tr><th>Topic</th><th>Practical behavior to teach</th></tr></thead><tbody>
+<tr><td>Social engineering</td><td>Recognize manipulation, verify requests independently, and report quickly.</td></tr>
+<tr><td>Emerging security topics</td><td>Update staff for changing threats, such as synthetic impersonation or unsafe AI tool use.</td></tr>
+<tr><td>Password and credential management</td><td>Use unique credentials, protect authenticators/recovery codes, and report suspected compromise.</td></tr>
+<tr><td>Remote work/teleworking/hybrid</td><td>Secure devices, home/work connections, screens, physical spaces, and approved remote access.</td></tr>
+<tr><td>BYOD</td><td>Follow enrollment and access rules; understand boundaries between personal and organizational data.</td></tr>
+<tr><td>Business email compromise (BEC)</td><td>Fraud using impersonated or compromised business communications. Verify payment/bank changes through an independently known channel and approval workflow.</td></tr>
+<tr><td>Removable media and cables</td><td>Avoid unknown media and untrusted accessories; some cables/devices can contain attack hardware.</td></tr>
+<tr><td>Situational awareness</td><td>Notice nearby observers, unattended devices, suspicious visitors, and unexpected requests.</td></tr>
+<tr><td>Operational security</td><td>Avoid exposing details that reveal operations, capabilities, schedules, or sensitive plans. A harmless-looking photo may reveal badges or internal screens.</td></tr>
+</tbody></table></div>
+<p><strong>Scenario:</strong> For rising payment fraud, train finance on independent callback verification, update approval procedures, measure reporting and verification behavior, and revise training based on results.</p>
+<h2 id="glossary-of-important-distinctions">Glossary of important distinctions</h2>
+<p>This compact glossary supplements the objective tables. Use the objective links for definitions, examples, and context.</p>
+<h3 id="foundations-and-cryptography">Foundations and cryptography</h3>
+<div class="table-wrap"><table><thead><tr><th>Term pair/group</th><th>Distinction</th><th>Review</th></tr></thead><tbody>
+<tr><td>Confidentiality / integrity / availability</td><td>Secrecy / trustworthy data state / usable service.</td><td><a href="#11-explain-security-concepts-and-controls">1.1</a></td></tr>
+<tr><td>Authentication / authorization / accounting</td><td>Verify identity / decide permissions / record actions.</td><td><a href="#11-explain-security-concepts-and-controls">1.1</a></td></tr>
+<tr><td>Control category / control type</td><td>Implementation family / purpose. One control can serve several purposes.</td><td><a href="#11-explain-security-concepts-and-controls">1.1</a></td></tr>
+<tr><td>Backout / fail forward</td><td>Restore previous state / repair or complete the new state.</td><td><a href="#12-given-a-scenario-demonstrate-the-impact-of-change-management-processes-on-security">1.2</a></td></tr>
+<tr><td>Encryption / hashing / signing</td><td>Hide contents / produce digest / verify signed origin and integrity.</td><td><a href="#13-explain-the-importance-of-using-appropriate-cryptographic-solutions">1.3</a></td></tr>
+<tr><td>Salt / key</td><td>Public uniqueness material for password hashing / secret or public cryptographic input with a different role.</td><td><a href="#13-explain-the-importance-of-using-appropriate-cryptographic-solutions">1.3</a></td></tr>
+<tr><td>Certificate / public key</td><td>A signed binding containing a key and attributes / the key itself.</td><td><a href="#13-explain-the-importance-of-using-appropriate-cryptographic-solutions">1.3</a></td></tr>
+</tbody></table></div>
+<h3 id="threats-and-vulnerabilities">Threats and vulnerabilities</h3>
+<div class="table-wrap"><table><thead><tr><th>Term pair/group</th><th>Distinction</th><th>Review</th></tr></thead><tbody>
+<tr><td>Threat / vulnerability / exploit / risk</td><td>Potential harm source / weakness / use of weakness / contextual possibility and consequence of harm.</td><td><a href="#21-explain-characteristics-of-threats-and-vulnerabilities">2.1</a></td></tr>
+<tr><td>Severity / priority</td><td>Technical seriousness / remediation order using business and threat context.</td><td><a href="#21-explain-characteristics-of-threats-and-vulnerabilities">2.1</a></td></tr>
+<tr><td>Vector / attack surface</td><td>Route into a target / all exposed opportunities.</td><td><a href="#23-describe-threat-vectors-and-sources">2.3</a>, <a href="#24-explain-types-of-vulnerabilities-and-attack-surfaces">2.4</a></td></tr>
+<tr><td>Virus / worm / Trojan</td><td>Infects host content / self-propagates / disguises malicious behavior as legitimate.</td><td><a href="#25-given-a-scenario-analyze-indicators-of-malicious-activity">2.5</a></td></tr>
+<tr><td>Spraying / brute force</td><td>Few guesses across many accounts / many candidate guesses.</td><td><a href="#25-given-a-scenario-analyze-indicators-of-malicious-activity">2.5</a></td></tr>
+<tr><td>Prompt injection / poisoning / evasion</td><td>Redirect through input / corrupt trusted model or data sources / avoid correct detection.</td><td><a href="#26-summarize-threats-and-vulnerabilities-associated-with-artificial-intelligence-usage">2.6</a></td></tr>
+<tr><td>Indicator / proof</td><td>Clue needing context / sufficiently supported conclusion.</td><td><a href="#25-given-a-scenario-analyze-indicators-of-malicious-activity">2.5</a></td></tr>
+</tbody></table></div>
+<h3 id="architecture-and-data">Architecture and data</h3>
+<div class="table-wrap"><table><thead><tr><th>Term pair/group</th><th>Distinction</th><th>Review</th></tr></thead><tbody>
+<tr><td>Hybrid / multicloud</td><td>Combine distinct environments / use multiple providers. They can coexist.</td><td><a href="#31-compare-and-contrast-security-implications-of-different-architecture-models">3.1</a></td></tr>
+<tr><td>Logical / physical segmentation</td><td>Enforced separation on shared infrastructure / separate physical paths or equipment.</td><td><a href="#31-compare-and-contrast-security-implications-of-different-architecture-models">3.1</a></td></tr>
+<tr><td>Fail-open / fail-closed</td><td>Allow on control failure / deny on control failure.</td><td><a href="#32-given-a-scenario-manage-the-security-architecture-to-best-protect-the-infrastructure">3.2</a></td></tr>
+<tr><td>Masking / tokenization / encryption</td><td>Hide displayed values / substitute mapped values / cryptographically transform values.</td><td><a href="#33-summarize-concepts-and-strategies-used-to-protect-data">3.3</a></td></tr>
+<tr><td>Owner / custodian / steward</td><td>Business accountability / technical handling / quality and governance.</td><td><a href="#33-summarize-concepts-and-strategies-used-to-protect-data">3.3</a></td></tr>
+<tr><td>Hot / warm / cold site</td><td>High / intermediate / low recovery readiness.</td><td><a href="#34-explain-the-importance-of-resilience-and-recovery-in-security-architecture">3.4</a></td></tr>
+<tr><td>High availability / backup</td><td>Maintain service through failures / recover earlier preserved data.</td><td><a href="#34-explain-the-importance-of-resilience-and-recovery-in-security-architecture">3.4</a></td></tr>
+<tr><td>Recovery time / recovery point</td><td>Tolerable restoration delay / tolerable lost-data interval.</td><td><a href="#34-explain-the-importance-of-resilience-and-recovery-in-security-architecture">3.4</a></td></tr>
+</tbody></table></div>
+<h3 id="operations-and-identity">Operations and identity</h3>
+<div class="table-wrap"><table><thead><tr><th>Term pair/group</th><th>Distinction</th><th>Review</th></tr></thead><tbody>
+<tr><td>Detection / prevention</td><td>Observe and alert / block or constrain.</td><td><a href="#41-given-a-scenario-apply-mitigating-controls-techniques-and-solutions-to-secure-the-environment">4.1</a></td></tr>
+<tr><td>Identification / authentication</td><td>Claim an identity / verify the claim. Identity proofing establishes real-world identity earlier.</td><td><a href="#45-given-a-scenario-apply-concepts-related-to-identity-and-access-management">4.5</a></td></tr>
+<tr><td>Federation / single sign-on</td><td>Cross-domain trust / reuse of an authenticated session across services.</td><td><a href="#45-given-a-scenario-apply-concepts-related-to-identity-and-access-management">4.5</a></td></tr>
+<tr><td>Role-based / rule-based</td><td>Job-role membership / evaluated conditions.</td><td><a href="#45-given-a-scenario-apply-concepts-related-to-identity-and-access-management">4.5</a></td></tr>
+<tr><td>Automation / orchestration</td><td>Execute tasks / coordinate tasks across systems.</td><td><a href="#46-given-a-scenario-apply-automation-and-orchestration-solutions-to-secure-operations">4.6</a></td></tr>
+<tr><td>Containment / eradication / recovery</td><td>Limit harm / remove attacker and causes / restore trusted service.</td><td><a href="#47-summarize-concepts-associated-with-incident-response-activities">4.7</a></td></tr>
+<tr><td>Hash / chain of custody</td><td>Integrity comparison / documented evidence handling and possession.</td><td><a href="#48-given-a-scenario-use-data-artifacts-and-sources-to-support-a-security-investigation">4.8</a></td></tr>
+<tr><td>Snapshot / forensic image</td><td>Platform-defined point-in-time state / evidence acquisition designed for investigative completeness.</td><td><a href="#48-given-a-scenario-use-data-artifacts-and-sources-to-support-a-security-investigation">4.8</a></td></tr>
+</tbody></table></div>
+<h3 id="governance-and-risk">Governance and risk</h3>
+<div class="table-wrap"><table><thead><tr><th>Term pair/group</th><th>Distinction</th><th>Review</th></tr></thead><tbody>
+<tr><td>Policy / standard / procedure / guideline</td><td>Direction / mandatory detail / execution steps / recommendation.</td><td><a href="#51-explain-the-importance-of-governance-risk-and-compliance-artifacts">5.1</a></td></tr>
+<tr><td>Inherent / residual risk</td><td>Risk before controls / risk after controls. Inherent risk is added context for residual risk.</td><td><a href="#52-explain-the-impact-of-risk-management-processes-on-the-security-of-the-organization">5.2</a></td></tr>
+<tr><td>Appetite / acceptance</td><td>Broad willingness to retain risk / explicit decision about a particular risk.</td><td><a href="#52-explain-the-impact-of-risk-management-processes-on-the-security-of-the-organization">5.2</a></td></tr>
+<tr><td>Quantitative / qualitative</td><td>Numeric estimates / descriptive categories.</td><td><a href="#52-explain-the-impact-of-risk-management-processes-on-the-security-of-the-organization">5.2</a></td></tr>
+<tr><td>Agreement / objective</td><td>Contractual service commitment / measurable service target.</td><td><a href="#53-explain-the-assessment-and-management-processes-associated-with-third-party-risk">5.3</a></td></tr>
+<tr><td>Attestation / acknowledgement</td><td>Claim of compliance / record of receipt or understanding.</td><td><a href="#54-summarize-elements-of-effective-security-compliance">5.4</a></td></tr>
+<tr><td>Audit / assessment / penetration test</td><td>Evidence-based evaluation against criteria / broader evaluation / authorized demonstration of exploitability.</td><td><a href="#55-explain-concepts-associated-with-audit-and-assessment-activities">5.5</a></td></tr>
+<tr><td>Legal hold / retention schedule</td><td>Preserve relevant records despite ordinary disposal / routine rules for keeping and deleting records.</td><td><a href="#54-summarize-elements-of-effective-security-compliance">5.4</a></td></tr>
+</tbody></table></div>
+<h2 id="complete-acronym-glossary">Complete acronym glossary</h2>
+<p>The following sections include every entry in the PDF&#x27;s acronym list, with standard expansions and concise working meanings. Items appearing only in that list remain included. Minor source wording discrepancies are noted rather than taught as incorrect terminology.</p>
+<h3 id="ac">A–C</h3>
+<div class="table-wrap"><table><thead><tr><th>Acronym</th><th>Full name</th><th>Working meaning</th></tr></thead><tbody>
+<tr><td>AAA</td><td>Authentication, Authorization, and Accounting</td><td>Identity verification, permission decisions, and activity recording.</td></tr>
+<tr><td>AI</td><td>Artificial Intelligence</td><td>Systems performing tasks such as prediction, generation, or autonomous tool use.</td></tr>
+<tr><td>ALE</td><td>Annualized Loss Expectancy</td><td>Estimated yearly loss: single-event loss multiplied by annual frequency.</td></tr>
+<tr><td>AML/CTF</td><td>Anti-money Laundering/Counter-terrorism Financing</td><td>Controls addressing illicit money movement and terrorist funding.</td></tr>
+<tr><td>APT</td><td>Advanced Persistent Threat</td><td>Sustained, capable adversary activity pursuing long-term objectives.</td></tr>
+<tr><td>ARO</td><td>Annualized Rate of Occurrence</td><td>Estimated number of occurrences per year; can be a fraction.</td></tr>
+<tr><td>AUP</td><td>Acceptable Use Policy</td><td>Rules for permitted use of organizational resources.</td></tr>
+<tr><td>BEC</td><td>Business Email Compromise</td><td>Business-message fraud, often involving payments or account changes.</td></tr>
+<tr><td>BIMI</td><td>Brand Indicators for Message Identification</td><td>Brand display mechanism tied to applicable email authentication requirements.</td></tr>
+<tr><td>BIOS</td><td>Basic Input/Output System</td><td>Firmware that initializes hardware and begins startup; unauthorized changes can affect system trust.</td></tr>
+<tr><td>BYOD</td><td>Bring Your Own Device</td><td>Use of personally owned devices under organizational access/security rules.</td></tr>
+<tr><td>CAB</td><td>Change Advisory Board</td><td>Body reviewing changes, risk, timing, and approval requirements.</td></tr>
+<tr><td>CAPTCHA</td><td>Completely Automated Public Turing test to tell Computers and Humans Apart</td><td>Human-versus-automation challenge; attackers may abuse fake challenge pages.</td></tr>
+<tr><td>CI/CD</td><td>Continuous Integration and Continuous Deployment</td><td>Automated integration, testing, and deployment pipeline; protect its privileges and dependencies.</td></tr>
+<tr><td>CIA</td><td>Confidentiality, Integrity, and Availability</td><td>Three foundational goals: secrecy, trustworthy state, and accessible service.</td></tr>
+<tr><td>CRL</td><td>Certificate Revocation List</td><td>Published list of certificates revoked before their expiration.</td></tr>
+<tr><td>CSPM</td><td>Cloud Security Posture Management</td><td>Checks cloud resources for misconfiguration, exposure, and policy violations.</td></tr>
+<tr><td>CSR</td><td>Certificate Signing Request</td><td>Request containing identity details and a public key for certificate issuance.</td></tr>
+<tr><td>CVE</td><td>Common Vulnerabilities and Exposures</td><td>Identifier naming a publicly disclosed vulnerability.</td></tr>
+<tr><td>CVSS</td><td>Common Vulnerability Scoring System</td><td>Structured technical severity scoring; distinct from organization-specific risk.</td></tr>
+<tr><td>CWE</td><td>Common Weakness Enumeration</td><td>Catalog of weakness types, such as unsafe input handling; distinct from a specific vulnerability identifier.</td></tr>
+</tbody></table></div>
+<h3 id="dh">D–H</h3>
+<div class="table-wrap"><table><thead><tr><th>Acronym</th><th>Full name</th><th>Working meaning</th></tr></thead><tbody>
+<tr><td>DDoS</td><td>Distributed Denial of Service</td><td>Service exhaustion/disruption from distributed sources.</td></tr>
+<tr><td>DHCP</td><td>Dynamic Host Configuration Protocol</td><td>Automatically supplies network configuration; rogue servers can provide malicious settings.</td></tr>
+<tr><td>DKIM</td><td>DomainKeys Identified Mail</td><td>Domain-associated signature on email; verifies signed content and domain responsibility.</td></tr>
+<tr><td>DLP</td><td>Data Loss Prevention</td><td>Detection/control of prohibited sensitive-data handling and transfer.</td></tr>
+<tr><td>DMARC</td><td>Domain-based Message Authentication, Reporting, and Conformance</td><td>Email alignment, policy, and reporting built on sender authentication.</td></tr>
+<tr><td>DNS</td><td>Domain Name System</td><td>Maps names to records such as addresses; a target for redirection and tunneling.</td></tr>
+<tr><td>DoS</td><td>Denial of Service</td><td>Attack preventing legitimate service use; may involve one or many sources.</td></tr>
+<tr><td>EDR</td><td>Endpoint Detection and Response</td><td>Endpoint telemetry, investigation, detection, and response capabilities.</td></tr>
+<tr><td>EOI</td><td>Expression of Interest</td><td>Preliminary expression of capability or interest in a procurement opportunity.</td></tr>
+<tr><td>GBIC</td><td>Gigabit Interface Converter</td><td>Pluggable network transceiver module; appears in the PDF&#x27;s equipment/acronym material.</td></tr>
+<tr><td>gMSA</td><td>Group Managed Service Account</td><td>Managed service identity with automated password handling in supported domain environments.</td></tr>
+<tr><td>HIDS</td><td>Host-based Intrusion Detection System</td><td>Host-local monitoring that detects suspicious activity.</td></tr>
+<tr><td>HIPS</td><td>Host-based Intrusion Prevention System</td><td>Host-local control capable of blocking suspicious activity.</td></tr>
+<tr><td>HR</td><td>Human Resources</td><td>Employment-related stakeholder in investigations, training, and account lifecycle.</td></tr>
+</tbody></table></div>
+<h3 id="in">I–N</h3>
+<div class="table-wrap"><table><thead><tr><th>Acronym</th><th>Full name</th><th>Working meaning</th></tr></thead><tbody>
+<tr><td>IaC</td><td>Infrastructure as Code</td><td>Machine-readable infrastructure definitions enabling repeatable reviewed deployments.</td></tr>
+<tr><td>IDS</td><td>Intrusion Detection System</td><td>Detects suspicious activity and alerts; does not inherently block.</td></tr>
+<tr><td>IP</td><td>Internet Protocol</td><td>Network-layer addressing and delivery protocol; address alone is not proof of identity.</td></tr>
+<tr><td>IPFIX</td><td>Internet Protocol Flow Information Export</td><td>Standardized export of network-flow information, not necessarily payload contents.</td></tr>
+<tr><td>IPS</td><td>Intrusion Prevention System</td><td>Detects and can block suspicious activity; tuning affects false-positive disruption.</td></tr>
+<tr><td>IPSec</td><td>Internet Protocol Security</td><td>Suite protecting network traffic, commonly used in secure tunnels.</td></tr>
+<tr><td>LAN</td><td>Local Area Network</td><td>Network serving a limited local area; internal location does not imply trust.</td></tr>
+<tr><td>LDAP</td><td>Lightweight Directory Access Protocol</td><td>Directory access protocol; protect credentials, queries, and directory permissions.</td></tr>
+<tr><td>LLM</td><td>Large Language Model</td><td>Language-generating model with risks including injection, disclosure, and unreliable output.</td></tr>
+<tr><td>LMS</td><td>Learning Management System</td><td>Platform assigning, delivering, and tracking training.</td></tr>
+<tr><td>MDM</td><td>Mobile Device Management</td><td>Central enrollment, configuration, inventory, and management of mobile devices.</td></tr>
+<tr><td>MFA</td><td>Multifactor Authentication</td><td>Authentication using multiple distinct factor categories.</td></tr>
+<tr><td>MOA</td><td>Memorandum of Agreement</td><td>Document of agreed responsibilities/commitments; legal effect depends on content and law.</td></tr>
+<tr><td>MOU</td><td>Memorandum of Understanding</td><td>Document of shared intent/understanding; do not assume enforceability from title.</td></tr>
+<tr><td>MSA</td><td>Master Services Agreement</td><td>General terms governing a continuing service relationship.</td></tr>
+<tr><td>MTBF</td><td>Mean Time Between Failures</td><td>Average operating time between failures of a repairable system.</td></tr>
+<tr><td>MTTR</td><td>Mean Time to Repair</td><td>Average time to repair; measured performance rather than a recovery target.</td></tr>
+<tr><td>NDA</td><td>Non-disclosure Agreement</td><td>Terms limiting use/disclosure of confidential information.</td></tr>
+<tr><td>NFC</td><td>Near-field Communication</td><td>Short-range radio communication; proximity alone does not eliminate relay or trust risks.</td></tr>
+<tr><td>NIC</td><td>Network Interface Card</td><td>Hardware/network interface connecting a system to a network.</td></tr>
+<tr><td>NIDS</td><td>Network-based Intrusion Detection System</td><td>Network-positioned detection of suspicious traffic.</td></tr>
+<tr><td>NIPS</td><td>Network-based Intrusion Prevention System</td><td>Network-positioned detection with prevention capability.</td></tr>
+<tr><td>NVD</td><td>National Vulnerability Database</td><td>Vulnerability database maintained by NIST, providing vulnerability-related information/enrichment.</td></tr>
+</tbody></table></div>
+<h3 id="or">O–R</h3>
+<div class="table-wrap"><table><thead><tr><th>Acronym</th><th>Full name</th><th>Working meaning</th></tr></thead><tbody>
+<tr><td>OAuth</td><td>Open Authorization</td><td>Delegated authorization framework; not by itself a complete authentication protocol.</td></tr>
+<tr><td>OCSP</td><td>Online Certificate Status Protocol</td><td>Protocol to obtain certificate revocation status.</td></tr>
+<tr><td>OS</td><td>Operating System</td><td>Software managing hardware, processes, memory, and resources; includes a major security boundary.</td></tr>
+<tr><td>OT</td><td>Operational Technology</td><td>Technology monitoring or controlling physical operations, with safety and availability needs.</td></tr>
+<tr><td>OTP</td><td>One-time Password</td><td>Authentication code valid for a single use or short period; can still be phished.</td></tr>
+<tr><td>PDF</td><td>Portable Document Format</td><td>Document format; malicious files may exploit readers or contain deceptive/active content.</td></tr>
+<tr><td>PIR</td><td>Post-incident Reporting</td><td>Post-incident account of evidence, actions, impact, and improvements.</td></tr>
+<tr><td>PKI</td><td>Public Key Infrastructure</td><td>Certificates, authorities, keys, and processes establishing public-key trust.</td></tr>
+<tr><td>QR</td><td>Quick Response</td><td>Machine-readable code often encoding a destination; verify the destination before acting.</td></tr>
+<tr><td>RCS</td><td>Rich Communication Services</td><td>Enhanced mobile messaging; another channel for deceptive messages.</td></tr>
+<tr><td>RF</td><td>Radio Frequency</td><td>Radio-frequency communication underlying many wireless interfaces.</td></tr>
+<tr><td>RFC</td><td>Request for Comments</td><td>Internet specification/publication series; not every RFC is a standard.</td></tr>
+<tr><td>RFI</td><td>Request for Information</td><td>Procurement request gathering vendor/market capability information.</td></tr>
+<tr><td>RFP</td><td>Request for Proposal</td><td>Procurement request for proposed solutions and terms.</td></tr>
+<tr><td>RFQ</td><td>Request for Quote</td><td>Procurement request for pricing against a specified need.</td></tr>
+<tr><td>ROI</td><td>Return on Investment</td><td>Value relative to cost; include security, maintenance, and transition costs.</td></tr>
+<tr><td>RPO</td><td>Recovery Point Objective</td><td>Maximum targeted tolerable data-loss interval.</td></tr>
+<tr><td>RPS</td><td>Redundant Power Supply</td><td>Redundant device power supply; separate upstream feeds reduce shared failure.</td></tr>
+<tr><td>RTF</td><td>Rich Text Format</td><td>Document format that can be used in malicious attachment delivery.</td></tr>
+<tr><td>RTO</td><td>Recovery Time Objective</td><td>Maximum targeted restoration delay after disruption.</td></tr>
+</tbody></table></div>
+<h3 id="sx">S–X</h3>
+<div class="table-wrap"><table><thead><tr><th>Acronym</th><th>Full name</th><th>Working meaning</th></tr></thead><tbody>
+<tr><td>SaaS</td><td>Software as a Service</td><td>Provider-hosted application service; customer identity/data responsibilities remain.</td></tr>
+<tr><td>SAML</td><td>Security Assertion Markup Language</td><td>Framework for exchanging identity/authentication assertions in federation.</td></tr>
+<tr><td>SCAP</td><td>Security Content Automation Protocol</td><td>Specifications supporting automated security configuration and vulnerability information.</td></tr>
+<tr><td>SELinux</td><td>Security-enhanced Linux</td><td>Linux mandatory-access-control framework using policy and labels.</td></tr>
+<tr><td>SFP</td><td>Small Form-factor Pluggable</td><td>Compact pluggable transceiver module; appears in equipment/acronym material.</td></tr>
+<tr><td>SIEM</td><td>Security Information and Event Management</td><td>Central collection, correlation, search, and reporting of security events.</td></tr>
+<tr><td>SLE</td><td>Single Loss Expectancy</td><td>Estimated loss per incident, often asset value multiplied by exposure fraction.</td></tr>
+<tr><td>SMS</td><td>Short Message Service</td><td>Text messaging channel; smishing uses it for deception.</td></tr>
+<tr><td>SNMP</td><td>Simple Network Management Protocol</td><td>Network device information/management protocol; secure its version and configuration.</td></tr>
+<tr><td>SOAR</td><td>Security Orchestration, Automation, and Response</td><td>Combines security case handling and coordinated automated workflows across tools.</td></tr>
+<tr><td>SOC</td><td>Security Operations Center</td><td>Team/function monitoring and responding to security events; here it does not mean an audit-report designation.</td></tr>
+<tr><td>SOP</td><td>Standard Operating Procedure</td><td>Approved repeatable operational instructions.</td></tr>
+<tr><td>SOW</td><td>Statement of Work</td><td>Project-specific scope, tasks, deliverables, and acceptance terms.</td></tr>
+<tr><td>SPF</td><td>Sender Policy Framework</td><td>Domain policy identifying authorized email-sending infrastructure.</td></tr>
+<tr><td>SQL</td><td>Structured Query Language</td><td>Language for relational data operations; unsafe query construction can permit injection.</td></tr>
+<tr><td>SSE</td><td>Security Service Edge</td><td>Cloud-delivered security for access to web, cloud, and private applications.</td></tr>
+<tr><td>SSO</td><td>Single Sign-on</td><td>Reuse of an authentication session to access multiple services.</td></tr>
+<tr><td>TLS</td><td>Transport Layer Security</td><td>Authenticated secure transport protocol; certificate validation and configuration matter.</td></tr>
+<tr><td>TOC</td><td>Time-of-check</td><td>Point at which an application validates a resource or condition.</td></tr>
+<tr><td>TOU</td><td>Time-of-use</td><td>Point at which the resource is actually used; changes since the check may cause a race flaw.</td></tr>
+<tr><td>UPS</td><td>Uninterruptible Power Supply</td><td>Battery-backed short-term power for operation or safe shutdown.</td></tr>
+<tr><td>USB</td><td>Universal Serial Bus</td><td>Device connection interface; media and device emulation can carry attacks.</td></tr>
+<tr><td>UTM</td><td>Unified Threat Management</td><td>Product combining multiple security functions with shared administration.</td></tr>
+<tr><td>VNC</td><td>Virtual Network Computing</td><td>Remote screen/desktop control technology requiring protected access.</td></tr>
+<tr><td>VPN</td><td>Virtual Private Network</td><td>Protected network connection across another network; endpoint security still matters.</td></tr>
+<tr><td>WAF</td><td>Web Application Firewall</td><td>Filter inspecting web application traffic; complements secure application code.</td></tr>
+<tr><td>WIPS</td><td>Wireless Intrusion Prevention System</td><td>Wireless threat detection and prevention capability.</td></tr>
+<tr><td>XDR</td><td>Extended Detection and Response</td><td>Correlated detection/response across several security domains.</td></tr>
+</tbody></table></div>
+<h3 id="additional-acronyms-used-in-this-guide-or-objectives">Additional acronyms used in this guide or objectives</h3>
+<p>These are not all included in the PDF&#x27;s acronym appendix, but appear in the objectives or supporting explanations.</p>
+<div class="table-wrap"><table><thead><tr><th>Acronym</th><th>Full name</th><th>Working meaning</th></tr></thead><tbody>
+<tr><td>ATT&amp;CK</td><td>Adversarial Tactics, Techniques, and Common Knowledge</td><td>MITRE knowledge base for adversary behavior.</td></tr>
+<tr><td>IPAM</td><td>Internet Protocol Address Management</td><td>Maintains address allocation and related inventory.</td></tr>
+<tr><td>IT</td><td>Information Technology</td><td>Computing and information systems; shadow IT lacks approved oversight.</td></tr>
+<tr><td>NIST</td><td>National Institute of Standards and Technology</td><td>Publishes technical guidance and maintains vulnerability resources.</td></tr>
+<tr><td>OWASP</td><td>Open Worldwide Application Security Project</td><td>Community producing application-security guidance, including AI security resources.</td></tr>
+<tr><td>SecOps</td><td>Security Operations</td><td>Coordinated security and operational work.</td></tr>
+<tr><td>SLA</td><td>Service-level Agreement</td><td>Agreed service commitments, responsibilities, and remedies.</td></tr>
+<tr><td>SLO</td><td>Service-level Objective</td><td>Measurable performance target supporting service commitments.</td></tr>
+</tbody></table></div>
+<h2 id="scenario-practice-and-self-checks">Scenario practice and self-checks</h2>
+<p>These are original learning exercises. Try to explain the reasoning before reading the answer.</p>
+<div class="table-wrap"><table><thead><tr><th>Scenario/question</th><th>Answer and reasoning</th><th>Objectives</th></tr></thead><tbody>
+<tr><td>A visible camera records a server-room door. What category and types apply?</td><td>Physical category; detective through recording and deterring through visibility. A control can have multiple functions.</td><td><a href="#11-explain-security-concepts-and-controls">1.1</a></td></tr>
+<tr><td>A database migration cannot safely be reversed after new transactions arrive. What should the change plan address?</td><td>A tested fail-forward path, decision authority, dependencies, communication, and recovery criteria. “We will roll back” is inadequate if reversal loses data.</td><td><a href="#12-given-a-scenario-demonstrate-the-impact-of-change-management-processes-on-security">1.2</a></td></tr>
+<tr><td>A signed file is readable. Did signing fail?</td><td>No. Signing supports origin/integrity verification; encryption is needed for confidentiality.</td><td><a href="#13-explain-the-importance-of-using-appropriate-cryptographic-solutions">1.3</a></td></tr>
+<tr><td>A severe flaw is isolated, while a less severe flaw is actively exploited on a public payment server. Which gets attention first?</td><td>Consider the public exploited flaw first because exposure, exploitation, and business impact can outweigh raw severity. Validate both environments.</td><td><a href="#21-explain-characteristics-of-threats-and-vulnerabilities">2.1</a>, <a href="#43-given-a-scenario-perform-tasks-associated-with-vulnerability-management">4.3</a></td></tr>
+<tr><td>Many users have one failed login with the same common password. What attack pattern fits?</td><td>Password spraying; correlate source, timing, and outcomes.</td><td><a href="#25-given-a-scenario-analyze-indicators-of-malicious-activity">2.5</a></td></tr>
+<tr><td>A retrieved document tells an assistant to reveal private records. What is the risk?</td><td>Indirect prompt injection. Treat the document as untrusted data and independently enforce tool/data permissions.</td><td><a href="#26-summarize-threats-and-vulnerabilities-associated-with-artificial-intelligence-usage">2.6</a></td></tr>
+<tr><td>A service must return within two hours and lose no more than 15 minutes of data. Which metrics are these?</td><td>RTO = two hours; RPO = 15 minutes. Restoration speed and backup/replication recency are different design concerns.</td><td><a href="#34-explain-the-importance-of-resilience-and-recovery-in-security-architecture">3.4</a></td></tr>
+<tr><td>Two power supplies use the same power strip and circuit. Is power failure fully addressed?</td><td>No. Device-supply redundancy exists, but upstream shared failures remain.</td><td><a href="#34-explain-the-importance-of-resilience-and-recovery-in-security-architecture">3.4</a></td></tr>
+<tr><td>A secret is deleted from the current repository file. Is the exposure fixed?</td><td>Not necessarily. Rotate/revoke the secret, inspect history and distribution, and investigate possible misuse.</td><td><a href="#24-explain-types-of-vulnerabilities-and-attack-surfaces">2.4</a>, <a href="#41-given-a-scenario-apply-mitigating-controls-techniques-and-solutions-to-secure-the-environment">4.1</a></td></tr>
+<tr><td>A departed employee&#x27;s account is disabled, but an issued application token remains active. What gap exists?</td><td>Incomplete deprovisioning. Account, sessions, tokens, delegated permissions, and associated access need appropriate revocation.</td><td><a href="#45-given-a-scenario-apply-concepts-related-to-identity-and-access-management">4.5</a></td></tr>
+<tr><td>A production machine may contain malware and volatile evidence. Should it always be powered off immediately?</td><td>No universal answer. Balance ongoing harm and preservation under the response plan; isolation and authorized memory collection may be appropriate.</td><td><a href="#47-summarize-concepts-associated-with-incident-response-activities">4.7</a>, <a href="#48-given-a-scenario-use-data-artifacts-and-sources-to-support-a-security-investigation">4.8</a></td></tr>
+<tr><td>A file&#x27;s hash is recorded, but evidence handoffs are undocumented. Is chain of custody established?</td><td>No. Hashes help detect changes; custody requires handling/possession records.</td><td><a href="#48-given-a-scenario-use-data-artifacts-and-sources-to-support-a-security-investigation">4.8</a></td></tr>
+<tr><td>SLE is $40,000 and ARO is 0.2. What is ALE?</td><td>$8,000 per year as an estimated expected loss, not a guaranteed amount.</td><td><a href="#52-explain-the-impact-of-risk-management-processes-on-the-security-of-the-organization">5.2</a></td></tr>
+<tr><td>A vendor has an impressive audit report. Can all its services be assumed secure?</td><td>No. Check scope, period, exceptions, relevant services, and remediation; combine with continuing monitoring.</td><td><a href="#53-explain-the-assessment-and-management-processes-associated-with-third-party-risk">5.3</a>, <a href="#55-explain-concepts-associated-with-audit-and-assessment-activities">5.5</a></td></tr>
+<tr><td>A deletion request concerns records under a legal hold. What is the next step?</td><td>Coordinate with legal/privacy owners to determine applicable preservation and rights requirements; do not reflexively delete.</td><td><a href="#54-summarize-elements-of-effective-security-compliance">5.4</a></td></tr>
+<tr><td>Everyone completed phishing training, but suspicious messages are rarely reported. Is training effective?</td><td>Completion is an activity measure. Evaluate reporting, time to report, verification behavior, and repeat errors, then adjust training/processes.</td><td><a href="#56-given-a-scenario-apply-security-awareness-concepts-to-improve-organizational-security">5.6</a></td></tr>
+</tbody></table></div>
+<h3 id="final-review-routine">Final review routine</h3>
+<p>For every objective, explain its main terms without reading the table. Then invent an example and a counterexample. For scenarios, name the evidence, select a control, explain why it fits, and describe its limitation. Revisit any term you recognize but cannot apply. Practice comparing adjacent concepts, especially identity protocols, evidence types, recovery metrics, agreement types, and risk treatments.</p>
+<h2 id="sources-and-terminology-notes">Sources and terminology notes</h2>
+<p><strong>Primary scope source:</strong> The uploaded <em>CompTIA Security+ SY0-801 V8 Certification Exam Objectives, Version 2.0</em> (27 pages). Objective content is on pages 4–23; the 106-entry acronym list is on pages 24–26. Domain percentages here are taken from page 3 of that document. This guide follows the supplied PDF rather than substituting another exam version; it does not independently establish the document&#x27;s publication status or exam availability.</p>
+<p><strong>Supplemental primary references:</strong></p>
+<ul>
+<li style="margin-left:0.0em"><a href="https://pages.nist.gov/800-63-4/sp800-63b.html">NIST digital identity guidance</a>: password and authenticator guidance discussed in 4.5.</li>
+<li style="margin-left:0.0em"><a href="https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html">OWASP prompt-injection prevention guidance</a>: direct/indirect injection and layered controls discussed in 2.6.</li>
+<li style="margin-left:0.0em"><a href="https://attack.mitre.org/resources/">MITRE ATT&amp;CK resources</a>: tactics, techniques, and adversary behavior discussed in 5.5.</li>
+<li style="margin-left:0.0em"><a href="https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html">Lockheed Martin Cyber Kill Chain</a>: attack-stage model discussed in 5.5.</li>
+<li style="margin-left:0.0em"><a href="https://www.edpb.europa.eu/sme/be-compliant/respect-individuals-rights_en">European Data Protection Board — individual rights</a>: illustrative privacy rights and exceptions discussed in 5.4.</li>
+</ul>
+<p><strong>Terminology notes:</strong> The supplied acronym list uses “Portable Document Formats” and “Security Assertions Markup Language”; this guide uses the standard singular expansions. It uses both “Master Service Agreement” and “Master services agreement”; the glossary uses “Master Services Agreement.” “Data transpose,” “accounts” as an investigation stakeholder, and “functional/behavioral testing” are not defined in the PDF, so their explanations explicitly identify interpretation or context. Classification names are retained but not forced into a universal ranking. Broad items such as cryptographic tools, vulnerability types, and failure modes are explained with representative examples rather than attributed to a specific product.</p>
+<p><a href="#clickable-index">Return to index</a></p></main><a class="top" href="#clickable-index">Back to index</a></body></html>
