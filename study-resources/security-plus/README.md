@@ -4,8 +4,8 @@ A structured resource for my Security+ preparation, based on a supplied SY0-801 
 
 ## Read the guide
 
-- [Markdown study guide](study-guide.md): definitions, examples, scenario exercises, and a 106-entry acronym glossary.
-- [Browser edition](index.html): HTML with clickable navigation. GitHub displays HTML source; download and open it in a browser, or use the hosted edition when GitHub Pages is enabled.
+- [Markdown study guide](study-guide.md): definitions, examples, scenario exercises, and a 106-entry acronym glossary.- [Live browser edition](https://cigsnredwine.github.io/cybersecurity_portfolio/study-resources/security-plus/): Read online with clickable navigation.
+- [HTML source](index.html): Download to read offline.
 
 ## Process and attribution
 
