@@ -1,3 +1,4 @@
+
 # Cybersecurity Portfolio — Hien Long (Jayden) Nguyen
 
 I am Jayden, a computer science student developing practical cybersecurity skills, with experience in Python and SQL and ongoing preparation for the CompTIA Security+ certification. I am particularly interested in offensive and defensive security, and I am actively learning blue team and red team practices. My goal is to apply these skills responsibly to help organizations identify security weaknesses and better protect their data and users.
@@ -15,6 +16,10 @@ I am Jayden, a computer science student developing practical cybersecurity skill
 - **[Password Cracking with John the Ripper](./projects/john-the-ripper-password-cracking/):** Recovered passwords from instructor-provided DES and MD5 hashes using dictionary, rule-based, and incremental attacks.
 - **[Digital Forensics Investigation](./projects/Data%20Acquisition%20%26%20Extraction%20Lab/):** Analyzed a supplied disk image with FTK Imager and Autopsy; documented acquisition and reporting with screenshots.
 - **[Vulnerability Scanning Tools — TryHackMe Lab](./projects/Vulnerability%20Scanning%20Tools%20Lab/):** Completed the TryHackMe room using Nmap, Nikto, and OpenVAS; included scan screenshots and completion evidence.
+## Study Resources
+
+- **[Security+ Study Guide — AI-Assisted with Codex](./study-resources/security-plus/):** Definitions, practical examples, scenario exercises, and a 106-entry acronym glossary in Markdown and browser formats. Includes transparent attribution and the scope of automated checks; supports my certification preparation alongside the hands-on projects above.
+
 
 ## Certifications in Progress
 
