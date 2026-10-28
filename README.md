@@ -21,6 +21,8 @@ I am Jayden, a computer science student developing practical cybersecurity skill
 - **[Security+ Study Guide — AI-Assisted with Codex](./study-resources/security-plus/):** Definitions, practical examples, scenario exercises, and a 106-entry acronym glossary in Markdown and browser formats. Includes transparent attribution and the scope of automated checks; supports my certification preparation alongside the hands-on projects above.
 
 
+- **[Compromised Windows Analysis — Forensic Computing Lab](./projects/compromised-windows-analysis/): In progress.** Preparing an evidence-based investigation of Windows artifacts, event logs, persistence, execution, root cause, and an incident timeline; findings and completion evidence are pending.
+
 ## Certifications in Progress
 
 - CompTIA Security+
